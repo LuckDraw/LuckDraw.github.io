@@ -1,0 +1,12 @@
+{
+  "name": "luck-draw",
+  "scripts": {
+    "serve": "vuepress dev ./",
+    "build": "vuepress build ./ --dest ./docs/"
+  },
+  "author": "ldq <17778888138@189.cn>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "vue-luck-draw": "^3.1.4"
+  }
+}
