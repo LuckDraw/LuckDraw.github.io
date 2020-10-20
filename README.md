@@ -42,7 +42,7 @@
 <h2 class="hidden">官方文档 & Demo演示</h2>
 
 <blockquote class="hidden">
-  <p><a href="https://100px.net/vue-luck-draw?github" target="_black" rel="nofollow">https://100px.net/vue-luck-draw</a></p>
+  <p><a href="https://100px.net?vue-luck-draw" target="_black" rel="nofollow">https://100px.net?vue-luck-draw</a></p>
 </blockquote>
 
 <br />
@@ -52,8 +52,8 @@
 ### 方式 1：通过 import 引入
 
 
-> 使用 npm 安装：`npm i vue-luck-draw`  
-> 使用 yarn 安装：`yarn add vue-luck-draw`
+> npm 安装：`npm i vue-luck-draw`  
+> yarn 安装：`yarn add vue-luck-draw`
 
 找到 `main.js` 引入插件并 `use`
 
@@ -109,7 +109,7 @@ createApp(App).use(LuckDraw).mount('#app')
   />
 </div>
 <script src="./vue.min.js"></script>
-<script src="./index.umd.min.js"></script>
+<script src="./luckdraw.umd.min.js"></script>
 <script>
   new Vue({
     el: '#app'
