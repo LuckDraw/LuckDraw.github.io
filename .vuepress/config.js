@@ -27,7 +27,7 @@ module.exports = {
             collapsable: false,
           },
           {
-            title: '安装 & 使用',
+            title: '使用 Usage',
             path: '/',
             collapsable: false,
           },

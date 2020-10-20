@@ -7,6 +7,6 @@
   "author": "ldq <17778888138@189.cn>",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "vue-luck-draw": "^3.1.4"
+    "vue-luck-draw": "^3.1.6"
   }
 }

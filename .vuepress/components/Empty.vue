@@ -26,13 +26,16 @@ export default {
 <style>
   blockquote {
     color: #2c3e50;
-    padding: 5px 15px;
+    padding: 0px 15px;
     border-radius: 2px;
     border-left: 3px solid #ed4014;
     background: #ffffff;
   }
   blockquote code {
     font-weight: 700;
+  }
+  blockquote p {
+    line-height: 32px;
   }
   .lev2 a {
     font-weight: 600;
