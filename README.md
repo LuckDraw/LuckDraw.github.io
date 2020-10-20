@@ -47,15 +47,16 @@
 
 <br />
 
-## 在 vue 中使用
+## 在 vue2.x / vue3.x 中使用
 
 ### 方式 1：通过 import 引入
 
+首先安装包
 
 > npm 安装：`npm i vue-luck-draw`  
 > yarn 安装：`yarn add vue-luck-draw`
 
-找到 `main.js` 引入插件并 `use`
+然后找到 `main.js` 引入插件并 `use`
 
 ```js
 // vue2.x
@@ -67,7 +68,7 @@ import LuckDraw from 'vue-luck-draw/vue3'
 createApp(App).use(LuckDraw).mount('#app')
 ```
 
-然后在组件内使用`<LuckyWheel />大转盘组件`或`<LuckyGrid />九宫格组件`
+最后在组件内使用 **`<LuckyWheel />`大转盘组件** 或 **`<LuckyGrid />`九宫格组件**
 
 ```vue
 <template>
