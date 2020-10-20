@@ -51,12 +51,17 @@
 
 ### 方式 1：通过 import 引入
 
-首先安装包
+1. 首先安装插件
 
-> npm 安装：`npm i vue-luck-draw`  
-> yarn 安装：`yarn add vue-luck-draw`
+```shell
+# npm 安装：
+npm install vue-luck-draw
 
-然后找到 `main.js` 引入插件并 `use`
+# yarn 安装：
+yarn add vue-luck-draw
+```
+
+2. 然后找到 `main.js` 引入插件并 `use`
 
 ```js
 // vue2.x
@@ -68,7 +73,7 @@ import LuckDraw from 'vue-luck-draw/vue3'
 createApp(App).use(LuckDraw).mount('#app')
 ```
 
-最后在组件内使用 **`<LuckyWheel />`大转盘组件** 或 **`<LuckyGrid />`九宫格组件**
+3. 最后在组件内使用 **`<LuckyWheel />`大转盘组件** 或 **`<LuckyGrid />`九宫格组件**
 
 ```vue
 <template>
