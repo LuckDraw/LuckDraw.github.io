@@ -16,23 +16,10 @@
   <LuckyWheel
     style="width: 310px; height: 310px"
     ref="LuckyWheel"
-    :default-style="{
-      fontColor: '#d64737',
-      fontSize: '14px'
-    }"
-    :blocks="[
-      { padding: '13px', background: '#d64737' }
-    ]"
     :prizes="prizes"
-    :buttons="[
-      { radius: '50px', background: '#d64737' },
-      { radius: '45px', background: '#fff' },
-      { radius: '41px', background: '#f6c66f', pointer: true },
-      {
-        radius: '35px', background: '#ffdea0',
-        imgs: [{ src: require('./img/button.png'), width: '65%', top: '-13%' }]
-      }
-    ]"
+    :default-style="defaultStyle"
+    :blocks="blocks"
+    :buttons="buttons"
     @start="startCallBack"
     @end="endCallBack"
   />
@@ -42,7 +29,23 @@
 export default {
   data () {
     return {
-      prizes: []
+      prizes: [],
+      defaultStyle: {
+        fontColor: '#d64737',
+        fontSize: '14px'
+      },
+      blocks: [
+        { padding: '13px', background: '#d64737' }
+      ],
+      buttons: [
+        { radius: '50px', background: '#d64737' },
+        { radius: '45px', background: '#fff' },
+        { radius: '41px', background: '#f6c66f', pointer: true },
+        {
+          radius: '35px', background: '#ffdea0',
+          imgs: [{ src: require('./img/button.png'), width: '65%', top: '-13%' }]
+        }
+      ],
     }
   },
   mounted () {
@@ -82,28 +85,13 @@ export default {
 ```vue
 <template>
   <LuckyGrid
-    style="width: 300px; height: 300px"
+    style="width: 310px; height: 310px"
     ref="LuckDraw"
     :prizes="prizes"
     :button="btnConfig"
-    :blocks="[
-      { padding: '15px', background: '#ffc27a', borderRadius: 28 },
-      { padding: '4px', background: '#ff4a4c', borderRadius: 23 },
-      { padding: '4px', background: '#ff625b', borderRadius: 20 },
-    ]"
-    :default-style="{
-      gutter: 5,
-      borderRadius: 15,
-      fontColor: '#DF424B',
-      fontSize: '14px',
-      textAlign: 'center',
-      background: '#fff',
-      shadow: '0 5 1 #ebf1f4'
-    }"
-    :activeStyle="{
-      background: 'linear-gradient(270deg, #FFDCB8, #FDC689)',
-      shadow: ''
-    }"
+    :blocks="blocks"
+    :default-style="defaultStyle"
+    :active-style="activeStyle"
     @start="startCallBack"
     @end="endCallBack"
   />
@@ -115,6 +103,24 @@ export default {
     return {
       luckyNum: 0,
       prizes: [],
+      blocks: [
+        { padding: '15px', background: '#ffc27a', borderRadius: 28 },
+        { padding: '4px', background: '#ff4a4c', borderRadius: 23 },
+        { padding: '4px', background: '#ff625b', borderRadius: 20 },
+      ],
+      defaultStyle: {
+        gutter: 5,
+        borderRadius: 15,
+        fontColor: '#DF424B',
+        fontSize: '14px',
+        textAlign: 'center',
+        background: '#fff',
+        shadow: '0 5 1 #ebf1f4'
+      },
+      activeStyle: {
+        background: 'linear-gradient(270deg, #FFDCB8, #FDC689)',
+        shadow: ''
+      },
     }
   },
   computed: {
@@ -125,7 +131,7 @@ export default {
         background: 'linear-gradient(270deg, #FFDCB8, #FDC689)',
         shadow: '0 5 1 #e89b4f',
         fonts: [
-          { text: `${this.luckyNum} 次`, fontColor: '#fff', top: '70%', fontSize: '12px' },
+          { text: `${this.luckyNum} 次`, fontColor: '#fff', top: '73%', fontSize: '11px' },
         ],
         imgs: [
           { src: require('./img/button.png'), width: '65%', top: '13%' },
@@ -188,32 +194,13 @@ export default {
 ```vue
 <template>
   <LuckyGrid
-    style="width: 350px; height: 370px"
+    style="width: 310px; height: 330px"
     ref="LuckDraw"
-    :blocks="[
-      { padding: '1px', background: '#e2cea3', borderRadius: '13px' },
-      { padding: '5px 0px', background: '#f3ecdc', borderRadius: '13px' },
-      { padding: '1px', background: '#e2cea3', borderRadius: '8px' },
-      { padding: '20px 15px', background: '#fffcf5', borderRadius: '8px' },
-    ]"
-    :button="{
-      x: 1, y: 1, background: 'rgba(0, 0, 0, 0)',
-      imgs: [
-        { src: require('./img/yx/btn.png'), width: '90%', top: '7%' }
-      ]
-    }"
     :prizes="prizes"
-    :default-style="{
-      background: '#ffefd6',
-      borderRadius: '5px',
-      fontColor: '#755c28',
-      fontSize: '10px',
-      lineHeight: '12px'
-    }"
-    :activeStyle="{
-      background: '#de7247',
-      fontColor: '#ffefd6',
-    }"
+    :blocks="blocks"
+    :button="button"
+    :default-style="defaultStyle"
+    :active-style="activeStyle"
     @start="startCallBack"
     @end="endCallBack"
   />
@@ -221,10 +208,32 @@ export default {
 
 <script>
 export default {
-  name: '',
   data () {
     return {
-      prizes: []
+      prizes: [],
+      blocks: [
+        { padding: '1px', background: '#e2cea3', borderRadius: '13px' },
+        { padding: '5px 0px', background: '#f3ecdc', borderRadius: '13px' },
+        { padding: '1px', background: '#e2cea3', borderRadius: '8px' },
+        { padding: '15px 10px', background: '#fffcf5', borderRadius: '8px' },
+      ],
+      button: {
+        x: 1, y: 1, background: 'rgba(0, 0, 0, 0)',
+        imgs: [
+          { src: require('./img/yx/btn.png'), width: '90%', top: '5%' }
+        ]
+      },
+      defaultStyle: {
+        background: '#ffefd6',
+        borderRadius: '5px',
+        fontColor: '#755c28',
+        fontSize: '10px',
+        lineHeight: '12px'
+      },
+      activeStyle: {
+        background: '#de7247',
+        fontColor: '#ffefd6',
+      }
     }
   },
   mounted () {
@@ -251,7 +260,7 @@ export default {
     startCallBack () {
       this.$refs.LuckDraw.play()
       setTimeout(() => {
-        this.$refs.LuckDraw.stop(Math.random() * 7 >> 0)
+        this.$refs.LuckDraw.stop(Math.random() * 8 >> 0)
       }, 2000)
     },
     endCallBack (prize) {
@@ -275,21 +284,10 @@ export default {
     <LuckyWheel
       class="luck-draw"
       ref="LuckyWheel"
-      :default-style="{
-        fontColor: '#303133',
-        fontSize: '10px',
-        gutter: '1px'
-      }"
-      :blocks="[
-        { padding: '1px', background: '#fa3e3f' },
-        { padding: '10px', background: '#f9d400' },
-        { padding: '1px', background: '#e76f51' },
-      ]"
+      :default-style="defaultStyle"
+      :blocks="blocks"
       :prizes="prizes"
-      :buttons="[{
-        radius: '30px',
-        imgs: [{ src: require('./img/cjl/button.png'), width: '105%', top: '-45%' }]
-      }]"
+      :buttons="buttons"
       @start="startCallBack"
       @end="endCallBack"
     />
@@ -300,7 +298,21 @@ export default {
 export default {
   data () {
     return {
-      prizes: []
+      prizes: [],
+      buttons: [{
+        radius: '30px',
+        imgs: [{ src: require('./img/cjl/button.png'), width: '105%', top: '-45%' }]
+      }],
+      blocks: [
+        { padding: '1px', background: '#fa3e3f' },
+        { padding: '10px', background: '#f9d400' },
+        { padding: '1px', background: '#e76f51' },
+      ],
+      defaultStyle: {
+        fontColor: '#303133',
+        fontSize: '10px',
+        gutter: '1px'
+      }
     }
   },
   mounted () {
@@ -332,7 +344,7 @@ export default {
       this.$refs.LuckyWheel.play()
       setTimeout(() => {
         this.$refs.LuckyWheel.stop(Math.random() * 8 >> 0)
-      }, 3000)
+      }, 2000)
     },
     endCallBack (prize) {
       alert(`恭喜你获得${prize.name}`)
@@ -370,20 +382,10 @@ export default {
     <LuckyWheel
       class="luck-draw"
       ref="LuckyWheel"
-      :default-style="{
-        fontColor: '#a70c1b',
-        fontSize: '10px',
-        gutter: 0.5
-      }"
-      :blocks="[
-        { padding: '3px', background: '#a70c1b' },
-        { padding: '6px', background: '#ffb633' },
-      ]"
+      :default-style="defaultStyle"
+      :blocks="blocks"
       :prizes="prizes"
-      :buttons="[{
-        radius: '45px',
-        imgs: [{ src: require('./img/pdmm/btn.png'), width: '102%', top: '-50%' }]
-      }]"
+      :buttons="buttons"
       @start="startCallBack"
       @end="endCallBack"
     />
@@ -394,7 +396,19 @@ export default {
 export default {
   data () {
     return {
-      prizes: []
+      prizes: [],
+      buttons: [{
+        radius: '45px',
+        imgs: [{ src: require('./img/pdmm/btn.png'), width: '102%', top: '-50%' }]
+      }],
+      blocks: [
+        { padding: '3px', background: '#a70c1b' },
+        { padding: '6px', background: '#ffb633' },
+      ],
+      defaultStyle: {
+        fontColor: '#a70c1b',
+        fontSize: '10px',
+      }
     }
   },
   mounted () {
@@ -447,6 +461,128 @@ export default {
     position: absolute;
     left: 49.1%;
     top: 48.3%;
+    transform: translate(-50%, -50%)
+  }
+</style>
+```
+
+
+<div class="ldq-card">
+  <demo-jq1-grid />
+</div>
+
+```vue
+<template>
+  <div class="box">
+    <img v-if="flag" :src="require('./img/k1.png')" width="310" height="320" />
+    <img v-else :src="require('./img/k2.png')" width="310" height="320" />
+    <LuckyGrid
+      class="luck-draw"
+      ref="LuckDraw"
+      :prizes="prizes"
+      :button="button"
+      :blocks="blocks"
+      :default-style="defaultStyle"
+      :active-style="activeStyle"
+      @start="startCallBack"
+      @end="endCallBack"
+    />
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      flag: true,
+      prizes: [],
+      button: {
+        x: 1, y: 1,
+        background: '#ff3a59',
+        shadow: '0 5 0 #ea0125',
+        fonts: [
+          { text: '抽奖', fontColor: '#fff', top: '15%', fontSize: '30px' },
+          { text: '消耗10积分', fontColor: '#fff', top: '65%', fontSize: '12px' },
+        ],
+      },
+      blocks: [
+        { padding: '10px', background: 'rgba(0, 0, 0, 0)', borderRadius: 10 },
+      ],
+      defaultStyle: {
+        gutter: 10,
+        borderRadius: 8,
+        fontColor: '#708abf',
+        fontSize: '13px',
+        textAlign: 'center',
+        background: '#ffffff',
+        shadow: '0 5 0 #9cd2ff',
+        speed: 10,
+      },
+      activeStyle: {
+        fontColor: '#fff',
+        background: '#ff3a59',
+        shadow: '0 5 0 #ea0125',
+      }
+    }
+  },
+  mounted () {
+    this.getPrizeList()
+    setInterval(_ => {
+      this.flag = !this.flag
+    }, 500)
+  },
+  methods: {
+    getPrizeList () {
+      // 模拟接口请求奖品列表
+      setTimeout(() => {
+        const data = [
+          { name: '谢谢参与', img: require('./img/01.png') },
+          { name: '红包', img: require('./img/02.png') },
+          { name: '谢谢参与', img: require('./img/01.png') },
+          { name: '红包', img: require('./img/02.png') },
+          { name: '谢谢参与', img: require('./img/01.png') },
+          { name: '红包', img: require('./img/02.png') },
+          { name: '谢谢参与', img: require('./img/01.png') },
+          { name: '红包', img: require('./img/02.png') }
+        ]
+        this.prizes = []
+        let axis = [[0, 0], [1, 0], [2, 0], [2, 1], [2, 2], [1, 2], [0, 2], [0, 1]]
+        for (let i = 0; i < 8; i++) {
+          let item = data[i]
+          this.prizes.push({
+            name: item.name,
+            index: i, x: axis[i][0], y: axis[i][1],
+            fonts: [{ text: item.name, top: '63%' }],
+            imgs: [{ src: item.img, width: '50%', top: '13%' }]
+          })
+        }
+      }, 0)
+    },
+    startCallBack () {
+      this.$refs.LuckDraw.play()
+      setTimeout(() => {
+        this.$refs.LuckDraw.stop(Math.random() * 8 >> 0)
+      }, 2000)
+    },
+    endCallBack (prize) {
+      alert(`恭喜你获得大奖: ${prize.name}`)
+    }
+  }
+}
+</script>
+
+<style scoped>
+  .box {
+    position: relative;
+    width: 310px;
+    height: 310px;
+  }
+  .luck-draw {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%)
   }
 </style>

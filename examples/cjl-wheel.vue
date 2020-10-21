@@ -4,21 +4,10 @@
     <LuckyWheel
       class="luck-draw"
       ref="LuckyWheel"
-      :default-style="{
-        fontColor: '#303133',
-        fontSize: '10px',
-        gutter: '1px'
-      }"
-      :blocks="[
-        { padding: '1px', background: '#fa3e3f' },
-        { padding: '10px', background: '#f9d400' },
-        { padding: '1px', background: '#e76f51' },
-      ]"
+      :default-style="defaultStyle"
+      :blocks="blocks"
       :prizes="prizes"
-      :buttons="[{
-        radius: '30px',
-        imgs: [{ src: require('./img/cjl/button.png'), width: '105%', top: '-45%' }]
-      }]"
+      :buttons="buttons"
       @start="startCallBack"
       @end="endCallBack"
     />
@@ -29,7 +18,21 @@
 export default {
   data () {
     return {
-      prizes: []
+      prizes: [],
+      buttons: [{
+        radius: '30px',
+        imgs: [{ src: require('./img/cjl/button.png'), width: '105%', top: '-45%' }]
+      }],
+      blocks: [
+        { padding: '1px', background: '#fa3e3f' },
+        { padding: '10px', background: '#f9d400' },
+        { padding: '1px', background: '#e76f51' },
+      ],
+      defaultStyle: {
+        fontColor: '#303133',
+        fontSize: '10px',
+        gutter: '1px'
+      }
     }
   },
   mounted () {

@@ -4,24 +4,9 @@
     ref="LuckDraw"
     :prizes="prizes"
     :button="btnConfig"
-    :blocks="[
-      { padding: '15px', background: '#ffc27a', borderRadius: 28 },
-      { padding: '4px', background: '#ff4a4c', borderRadius: 23 },
-      { padding: '4px', background: '#ff625b', borderRadius: 20 },
-    ]"
-    :default-style="{
-      gutter: 5,
-      borderRadius: 15,
-      fontColor: '#DF424B',
-      fontSize: '14px',
-      textAlign: 'center',
-      background: '#fff',
-      shadow: '0 5 1 #ebf1f4'
-    }"
-    :activeStyle="{
-      background: 'linear-gradient(270deg, #FFDCB8, #FDC689)',
-      shadow: ''
-    }"
+    :blocks="blocks"
+    :default-style="defaultStyle"
+    :active-style="activeStyle"
     @start="startCallBack"
     @end="endCallBack"
   />
@@ -33,6 +18,24 @@ export default {
     return {
       luckyNum: 0,
       prizes: [],
+      blocks: [
+        { padding: '15px', background: '#ffc27a', borderRadius: 28 },
+        { padding: '4px', background: '#ff4a4c', borderRadius: 23 },
+        { padding: '4px', background: '#ff625b', borderRadius: 20 },
+      ],
+      defaultStyle: {
+        gutter: 5,
+        borderRadius: 15,
+        fontColor: '#DF424B',
+        fontSize: '14px',
+        textAlign: 'center',
+        background: '#fff',
+        shadow: '0 5 1 #ebf1f4'
+      },
+      activeStyle: {
+        background: 'linear-gradient(270deg, #FFDCB8, #FDC689)',
+        shadow: ''
+      },
     }
   },
   computed: {

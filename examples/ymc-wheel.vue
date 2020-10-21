@@ -2,23 +2,10 @@
   <LuckyWheel
     style="width: 310px; height: 310px"
     ref="LuckyWheel"
-    :default-style="{
-      fontColor: '#d64737',
-      fontSize: '14px'
-    }"
-    :blocks="[
-      { padding: '13px', background: '#d64737' }
-    ]"
     :prizes="prizes"
-    :buttons="[
-      { radius: '50px', background: '#d64737' },
-      { radius: '45px', background: '#fff' },
-      { radius: '41px', background: '#f6c66f', pointer: true },
-      {
-        radius: '35px', background: '#ffdea0',
-        imgs: [{ src: require('./img/button.png'), width: '65%', top: '-13%' }]
-      }
-    ]"
+    :default-style="defaultStyle"
+    :blocks="blocks"
+    :buttons="buttons"
     @start="startCallBack"
     @end="endCallBack"
   />
@@ -28,7 +15,23 @@
 export default {
   data () {
     return {
-      prizes: []
+      prizes: [],
+      defaultStyle: {
+        fontColor: '#d64737',
+        fontSize: '14px'
+      },
+      blocks: [
+        { padding: '13px', background: '#d64737' }
+      ],
+      buttons: [
+        { radius: '50px', background: '#d64737' },
+        { radius: '45px', background: '#fff' },
+        { radius: '41px', background: '#f6c66f', pointer: true },
+        {
+          radius: '35px', background: '#ffdea0',
+          imgs: [{ src: require('./img/button.png'), width: '65%', top: '-13%' }]
+        }
+      ],
     }
   },
   mounted () {
