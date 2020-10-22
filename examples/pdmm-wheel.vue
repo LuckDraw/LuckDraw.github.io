@@ -81,8 +81,8 @@ export default {
     width: 245px;
     height: 245px;
     position: absolute;
-    left: 49.1%;
-    top: 48.3%;
+    left: 49%;
+    top: 48%;
     transform: translate(-50%, -50%)
   }
 </style>
