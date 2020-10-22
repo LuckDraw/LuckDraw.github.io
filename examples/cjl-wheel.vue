@@ -20,8 +20,8 @@ export default {
     return {
       prizes: [],
       buttons: [{
-        radius: '30px',
-        imgs: [{ src: require('./img/cjl/button.png'), width: '105%', top: '-45%' }]
+        radius: '40px',
+        imgs: [{ src: require('./img/cjl/button.png'), width: '105%', top: '-59%' }]
       }],
       blocks: [
         { padding: '1px', background: '#fa3e3f' },
