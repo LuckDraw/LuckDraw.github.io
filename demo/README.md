@@ -1,35 +1,38 @@
 
 
-<Empty />
-
+<!-- <Empty /> -->
 
 ## 大转盘示例
 
-<div style="display: flex">
-  <div style="">
-    <demo-ymc-wheel />
-  </div>
-  <div style="">
+<a-row :gutter="16">
+  <a-col :span="6">
+  <demo-ymc-wheel />
+  </a-col>
+  <a-col :span="6">
     <demo-cjl-wheel />
-  </div>
-  <div style="">
+  </a-col>
+  <a-col :span="6">
     <demo-pdmm-wheel />
-  </div>
-</div>
+  </a-col>
+  <a-col :span="6">
+  </a-col>
+</a-row>
+
+<br />
 
 ## 九宫格示例
 
-<div style="display: flex">
-  <div>
-    <demo-yyjk-grid />
-  </div>
-  <div>
+<a-row>
+  <a-col :span="6">
+  <demo-yyjk-grid />
+  </a-col>
+  <a-col :span="6">
     <demo-yx-grid />
-  </div>
-  <div>
+  </a-col>
+  <a-col :span="6">
     <demo-jq1-grid />
-  </div>
-  <div>
+  </a-col>
+  <a-col :span="6">
     <demo-food-grid />
-  </div>
-</div>
+  </a-col>
+</a-row>

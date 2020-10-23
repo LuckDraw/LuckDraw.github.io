@@ -29,7 +29,7 @@ export default {
         { radius: '41px', background: '#f6c66f', pointer: true },
         {
           radius: '35px', background: '#ffdea0',
-          imgs: [{ src: require('./img/button.png'), width: '65%', top: '-13%' }]
+          imgs: [{ src: require('./img/button.png'), width: '65%', top: '-50%' }]
         }
       ],
     }
@@ -45,8 +45,8 @@ export default {
         this.prizes.push({
           title: item,
           background: index % 2 ? '#f9e3bb' : '#f8d384',
-          fonts: [{ text: item, top: '8%' }],
-          imgs:[{ src: require(`./img/${index}.png`), width: '30%', top: '25%' }],
+          fonts: [{ text: item, top: '10%' }],
+          imgs:[{ src: require(`./img/${index}.png`), width: '30%', top: '35%' }],
         })
       })
     },

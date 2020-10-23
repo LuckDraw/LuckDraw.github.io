@@ -21,7 +21,7 @@ export default {
       prizes: [],
       buttons: [{
         radius: '40px',
-        imgs: [{ src: require('./img/cjl/button.png'), width: '105%', top: '-59%' }]
+        imgs: [{ src: require('./img/cjl/button.png'), width: '105%', top: '-180%' }]
       }],
       blocks: [
         { padding: '1px', background: '#fa3e3f' },
@@ -56,7 +56,7 @@ export default {
           name: item.name,
           background: item.color,
           fonts: [{ text: item.name, top: '10%' }],
-          imgs:[{ src: item.img, width: '30%', top: '28%' }],
+          imgs:[{ src: item.img, width: '30%', top: '35%' }],
         })
       })
     },
