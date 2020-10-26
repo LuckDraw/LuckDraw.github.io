@@ -64,3 +64,6 @@ div.footer-wrapper {
 .demo-code-btn {
   user-select: none;
 }
+.sidebar .personal-info-wrapper {
+  display: none !important;
+}

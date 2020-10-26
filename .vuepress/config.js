@@ -20,6 +20,7 @@ module.exports = {
   },
   theme: 'reco',
   themeConfig: {
+    mode: 'light',
     type: 'HomePage',
     logo: '/logo.png',
     noFoundPageByTencent: false,

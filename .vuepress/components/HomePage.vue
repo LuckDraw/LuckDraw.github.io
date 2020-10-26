@@ -15,7 +15,7 @@
     </section>
     <section class="footer">
       <p>
-        <span>本插件完全免费，不收取任何费用，代码100%原创</span>
+        <span>本插件完全免费，不收任何费用，代码100%原创</span>
       </p>
       <p>
         <span>
@@ -73,7 +73,6 @@ export default {
   width: 100%;
   display: block;
   margin: 0rem auto 1rem;
-  background: #fff;
 }
 .home-page-wrapper section.main {
   display: flex;
@@ -126,8 +125,11 @@ export default {
   .home-page-wrapper section {
     padding: 0 2rem;
   }
+  .home-page-wrapper .logo {
+    max-width: 10rem;
+  }
   .home-page-wrapper section.main {
-    height: 580px;
+    /* height: 580px; */
   }
   .home-page-wrapper section.description h1 {
     margin-top: 5rem;
@@ -151,7 +153,10 @@ export default {
     padding: 0 2rem;
   }
   .home-page-wrapper section.main {
-    height: 580px;
+    /* height: 580px; */
+  }
+  .home-page-wrapper .logo {
+    max-width: 10rem;
   }
   .home-page-wrapper section.description h1 {
     margin-top: 5rem;
