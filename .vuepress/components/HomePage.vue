@@ -111,7 +111,7 @@ export default {
 .home-page-wrapper .footer {
   border-top: 1px solid #eaecef;
   text-align: center;
-  padding: 1.3rem;
+  padding: 1.3rem 1rem;
 }
 .home-page-wrapper .footer span {
   color: #7f7f7f;
