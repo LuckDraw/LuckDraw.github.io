@@ -4,7 +4,7 @@ const headConfig = require('./config/head.js')
 const plugins = require('./config/plugins.js')
 
 module.exports = {
-  base: '/',
+  // base: '/',
   head: headConfig,
   locales: {
     '/': {
