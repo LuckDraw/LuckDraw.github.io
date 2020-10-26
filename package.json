@@ -1,13 +1,18 @@
 {
-  "name": "luck-draw",
+  "name": "luckdraw.github.io",
+  "version": "1.0.0",
   "scripts": {
-    "serve": "vuepress dev ./",
+    "dev": "vuepress dev ./ --open --host \"localhost\"",
     "build": "vuepress build ./ --dest ./docs/"
   },
-  "author": "ldq <17778888138@189.cn>",
-  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@vuepress-reco/vuepress-plugin-extract-code": "^1.0.4",
+    "vuepress": "1.5.4",
+    "vuepress-plugin-cursor-effects": "^1.0.0",
+    "vuepress-theme-reco": "1.5.7"
+  },
   "dependencies": {
-    "ant-design-vue": "^1.6.5",
-    "vue-luck-draw": "^3.1.7"
+    "vue-class-component": "^7.2.3",
+    "vue-luck-draw": "^3.1.8"
   }
 }

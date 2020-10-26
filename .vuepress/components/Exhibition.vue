@@ -17,7 +17,7 @@ export default {
   mounted () {
     let prev = null
     Array.from(this.$refs.box.parentNode.children).some(node => {
-      if (node === this.$refs.box && prev.nodeName === 'H3') {
+      if (node === this.$refs.box && prev.nodeName === 'H2') {
         this.$refs.header.appendChild(prev)
       }
       if (prev === this.$refs.box) {
@@ -76,11 +76,12 @@ export default {
     width: 100%;
     padding: 20px 25px;
     margin: 0;
+    margin-top: -95px !important;
     border-bottom: 1px solid #ebebeb;
     font-size: 18px;
     font-weight: 700;
   }
-  /deep/ .box-header h3 {
+  /deep/ .box-header h2 {
     margin: 0;
     padding-top: 6rem;
     margin-top: -6rem
