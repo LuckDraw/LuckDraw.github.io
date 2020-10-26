@@ -1,6 +1,6 @@
 {
   "name": "luckdraw.github.io",
-  "version": "1.0.0",
+  "version": "",
   "scripts": {
     "dev": "vuepress dev ./ --open --host \"localhost\"",
     "build": "vuepress build ./ --dest ./docs/"

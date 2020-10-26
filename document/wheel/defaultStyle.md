@@ -10,6 +10,7 @@ sidebar: 'auto'
   - <Describe name="fontColor?: string" mean="字体颜色" desc="默认是 '#000' 黑色" />
   - <Describe name="fontSize?: string" mean="字体大小(px)" desc="默认是 '18px'" />
   - <Describe name="fontStyle?: string" mean="字体样式" desc="默认是 'sans-serif'" />
+  - <Describe name="fontWeight?: string" mean="字体粗细" desc="默认为 '400'" />
   - <Describe name="lineHeight?: string" mean="字体行高" desc="默认等于字体大小" />
   - <Describe name="textAlign?: string" mean="文字和图片的对其方式" desc="目前只能居中!" />
   - <Describe name="background?: string" mean="奖品区域背景颜色" desc="默认是 '#fff' 白色" />

@@ -7,7 +7,7 @@
         <div class="desc" style="margin: -2rem">
           <Content/>
         </div>
-        <router-link class="btn-about" to="/">快速开始</router-link>
+        <router-link class="btn-about" to="/document/vue">快速开始</router-link>
       </div>
     </section>
     <section class="md-content-wrapper">
@@ -18,7 +18,7 @@
         <span>本插件完全免费，不收任何费用，代码100%原创</span>
       </p>
       <p>
-        <span>
+        <span style="color: #6190e8">
           您的 star 就是对我最大的鼓励&ensp;
           <a href="https://github.com/buuing/vue-luck-draw" target="_black">
             <i class="iconfont reco-github"></i>

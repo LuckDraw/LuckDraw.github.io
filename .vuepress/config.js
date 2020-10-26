@@ -50,13 +50,6 @@ module.exports = {
     // 搜索设置
     search: true,
     searchMaxSuggestions: 10,
-    /**
-     * valine 设置 (if you need valine comment )
-     */
-    // valineConfig: {
-    //   appId: '...',// your appId
-    //   appKey: '...', // your appKey
-    // }
   },
   plugins,
   markdown: {

@@ -15,6 +15,7 @@ sidebar: 'auto'
     - <Describe name="fontColor?: string" mean="字体颜色" desc="可继承 defaultStyle 字体颜色，默认为 '#000'" />
     - <Describe name="fontSize?: string" mean="字体大小(px)" desc="可继承 defaultStyle 字体大小，默认为 '22px'" />
     - <Describe name="fontStyle?: string" mean="字体样式" desc="可继承 defaultStyle 字体样式，默认为 'sans-serif'" />
+    - <Describe name="fontWeight?: string" mean="字体粗细" desc="可继承 defaultStyle 字体粗细，默认为 '400'" />
     - <Describe name="lineHeight?: string" mean="字体行高" desc="默认等于字体大小" />
 
   - <Describe name="imgs?: Array<object>" mean="图片列表" />

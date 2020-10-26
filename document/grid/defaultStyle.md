@@ -9,8 +9,9 @@ sidebar: 'auto'
   - <Describe name="gutter?: number" mean="格子之间的间距" desc="默认等于 5" />
   - <Describe name="borderRadius?: string | number" mean="格子圆角" desc="默认等于 20" />
   - <Describe name="fontColor?: string" mean="字体颜色" />
-  - <Describe name="fontSize?: string" mean="字体大小(px)" desc="可继承 defaultStyle 字体样式，默认为 '18px'" />
-  - <Describe name="fontStyle?: string" mean="字体样式" desc="可继承 defaultStyle 字体样式，默认为 'sans-serif'" />
+  - <Describe name="fontSize?: string" mean="字体大小(px)" desc="默认为 '18px'" />
+  - <Describe name="fontStyle?: string" mean="字体样式" desc="默认为 'sans-serif'" />
+  - <Describe name="fontWeight?: string" mean="字体粗细" desc="默认为 '400'" />
   - <Describe name="textAlign?: string" mean="文字和图片的对其方式" desc="目前只能居中!" />
   - <Describe name="background?: string" mean="格子的背景颜色" desc="默认是 '#fff' 白色" />
   - <Describe name="shadow?: string" mean="格子阴影" desc="由 4 个值组成：1.水平位置、2.垂直位置、3.模糊度、4.阴影颜色" />
