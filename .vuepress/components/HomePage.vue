@@ -15,38 +15,37 @@
     </section>
     <section class="footer">
       <p>
-        <span>本插件完全免费，不收任何费用，代码100%原创</span>
-      </p>
-      <p>
-        <span style="color: #6190e8">
-          您的 star 就是对我最大的鼓励&ensp;
-          <a href="https://github.com/buuing/vue-luck-draw" target="_black">
-            <i class="iconfont reco-github"></i>
+        <span>
+          本插件完全免费，开源不易，<a href="https://github.com/buuing/vue-luck-draw" target="_black">
+            <b style="color: #ff7f00">如果您觉得好用可以点个 star 支持我</b>
+            &ensp;<i class="iconfont reco-github"></i>
             Github
           </a>
         </span>
       </p>
       <p>
         <span>
-          <i class="iconfont reco-account"></i>
-          <a href="https://github.com/buuing" target="_black">ldq</a>
+          <i class="iconfont reco-wechat"></i>
+          new_ldq
         </span>
         <span>
-          <i class="iconfont reco-mail"></i>
-          <a href="javascript:;">17778888138@189.cn</a>
+          <i class="iconfont reco-faq"></i>
+          <a href="https://github.com/buuing/vue-luck-draw/issues">问题&建议</a>
         </span>
         <span>
           <i class="iconfont reco-copyright"></i>
-          2019 License
-          <a href="https://github.com/LuckDraw/vue-luck-draw/blob/master/LICENSE" target="_black">BSD-3-Clause</a>
+          2019
+          <a href="https://github.com/LuckDraw/vue-luck-draw/blob/master/LICENSE" target="_black">License BSD-3-Clause</a>
         </span>
       </p>
       <p>
         <span>
-          感谢
+          <i class="iconfont reco-document"></i>
+          <a href="https://github.com/vuejs/vuepress" target="_black">vuepress</a>
+        </span>
+        <span>
           <i class="iconfont reco-theme"></i>
           <a href="https://github.com/vuepress-reco/vuepress-theme-reco" target="_black">vuepress-theme-reco</a>
-          提供的主题
         </span>
       </p>
     </section>
@@ -115,11 +114,12 @@ export default {
 }
 .home-page-wrapper .footer span {
   color: #7f7f7f;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0 0.5rem;
 }
 .home-page-wrapper .footer p {
-  line-height: 1rem;
+  line-height: 1.5rem;
+  margin: 10px 0;
 }
 @media (max-width: 719px) {
   .home-page-wrapper section {

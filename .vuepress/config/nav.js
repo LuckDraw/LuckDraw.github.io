@@ -22,8 +22,8 @@ module.exports = {
       ]
     },
     { text: '演示', icon: 'reco-api', link: '/demo/wheel/ymc' },
+    { text: '问题&建议', icon: 'reco-faq', link: 'https://github.com/buuing/vue-luck-draw/issues' },
     { text: 'Github', icon: 'reco-github', link: 'https://github.com/buuing/vue-luck-draw' },
-    { text: '问题反馈', icon: 'reco-faq', link: 'https://github.com/buuing/vue-luck-draw/issues' },
   ],
   navEn: {}
 }

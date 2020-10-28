@@ -67,3 +67,27 @@ div.footer-wrapper {
 .sidebar .personal-info-wrapper {
   display: none !important;
 }
+.comments-wrapper p {
+  margin: 0;
+}
+.comments-wrapper span {
+  padding: 0 0.5rem;
+}
+.comments-wrapper {
+  color: #7f7f7f;
+  text-align: center;
+  font-weight: 600;
+  padding: 0rem 2.5rem;
+}
+.iconfont {
+  font-size: 15px !important;
+}
+.reco-github {
+  color: #24292E !important;
+}
+.reco-wechat {
+  /* color: #67cc79 !important; */
+}
+.page-nav {
+  display: none;
+}

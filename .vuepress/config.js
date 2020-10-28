@@ -25,6 +25,8 @@ module.exports = {
     logo: '/logo.png',
     noFoundPageByTencent: false,
     modePicker: false,
+    nextLinks: false,
+    prevLinks: false,
     subSidebar: 'auto',
     locales: {
       '/': {
