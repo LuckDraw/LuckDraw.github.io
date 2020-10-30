@@ -9,6 +9,7 @@
       :prizes="prizes"
       :button="button"
       :blocks="blocks"
+      :default-config="defaultConfig"
       :default-style="defaultStyle"
       :active-style="activeStyle"
       @start="startCallBack"
@@ -21,7 +22,6 @@
 export default {
   data () {
     return {
-      flag: true,
       prizes: [],
       button: {
         x: 1, y: 1, col: 2, row: 2,
@@ -35,8 +35,10 @@ export default {
       blocks: [
         { padding: '5px', background: 'rgba(0, 0, 0, 0)' },
       ],
-      defaultStyle: {
+      defaultConfig: {
         gutter: 10,
+      },
+      defaultStyle: {
         fontColor: '#fff',
         fontSize: '10px',
         background: 'rgba(0, 0, 0, 0)',
@@ -45,7 +47,7 @@ export default {
       activeStyle: {
         fontColor: '#1c258e',
         background: 'rgba(0, 0, 0, 0)',
-      }
+      },
     }
   },
   mounted () {

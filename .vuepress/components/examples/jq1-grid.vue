@@ -8,6 +8,7 @@
       :prizes="prizes"
       :button="button"
       :blocks="blocks"
+      :default-config="defaultConfig"
       :default-style="defaultStyle"
       :active-style="activeStyle"
       @start="startCallBack"
@@ -34,8 +35,10 @@ export default {
       blocks: [
         { padding: '10px', background: 'rgba(0, 0, 0, 0)', borderRadius: 10 },
       ],
-      defaultStyle: {
+      defaultConfig: {
         gutter: 10,
+      },
+      defaultStyle: {
         borderRadius: 8,
         fontColor: '#708abf',
         fontSize: '13px',
@@ -48,7 +51,7 @@ export default {
         fontColor: '#fff',
         background: '#ff3a59',
         shadow: '0 5 0 #ea0125',
-      }
+      },
     }
   },
   mounted () {

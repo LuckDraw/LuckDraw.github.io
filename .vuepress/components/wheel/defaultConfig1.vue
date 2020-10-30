@@ -15,7 +15,7 @@
     :buttons="[
       { radius: '30px', background: 'rgba(0, 0, 0, 0.1)' }
     ]"
-    :default-style="{
+    :default-config="{
       gutter: '5px'
     }"
   />

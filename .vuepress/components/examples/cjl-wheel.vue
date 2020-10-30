@@ -4,10 +4,11 @@
     <LuckyWheel
       class="luck-draw"
       ref="LuckyWheel"
-      :default-style="defaultStyle"
       :blocks="blocks"
       :prizes="prizes"
       :buttons="buttons"
+      :default-style="defaultStyle"
+      :default-config="defaultConfig"
       @start="startCallBack"
       @end="endCallBack"
     />
@@ -31,8 +32,10 @@ export default {
       defaultStyle: {
         fontColor: '#303133',
         fontSize: '10px',
-        gutter: '1px'
-      }
+      },
+      defaultConfig: {
+        gutter: '1px',
+      },
     }
   },
   mounted () {

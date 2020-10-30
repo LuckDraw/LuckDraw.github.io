@@ -20,7 +20,7 @@ export default {
       if (node === this.$refs.box && prev.nodeName === 'H2') {
         this.$refs.header.appendChild(prev)
       }
-      if (prev === this.$refs.box) {
+      if (prev === this.$refs.box && node.className.includes('demo-wrap')) {
         this.$refs.footer.appendChild(node)
         node.style.borderRadius = 0
         node.children[0].style.margin = 0

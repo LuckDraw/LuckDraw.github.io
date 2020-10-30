@@ -12,7 +12,6 @@
     ]"
     :button="{ x: 1, y: 1, fonts: [{ text: '抽奖', top: '35%' }] }"
     :default-style="{
-      gutter: 20,
       borderRadius: 8,
       fontColor: '#DF424B',
       fontSize: '22px',

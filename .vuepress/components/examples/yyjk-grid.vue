@@ -5,6 +5,7 @@
     :prizes="prizes"
     :button="btnConfig"
     :blocks="blocks"
+    :default-config="defaultConfig"
     :default-style="defaultStyle"
     :active-style="activeStyle"
     @start="startCallBack"
@@ -23,8 +24,10 @@ export default {
         { padding: '4px', background: '#ff4a4c', borderRadius: 23 },
         { padding: '4px', background: '#ff625b', borderRadius: 20 },
       ],
-      defaultStyle: {
+      defaultConfig: {
         gutter: 5,
+      },
+      defaultStyle: {
         borderRadius: 15,
         fontColor: '#DF424B',
         fontSize: '14px',

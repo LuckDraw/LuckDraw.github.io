@@ -15,6 +15,7 @@ module.exports = {
           { title: '边框 - blocks', path: '/document/wheel/blocks' },
           { title: '奖品 - prizes', path: '/document/wheel/prizes' },
           { title: '抽奖按钮 - buttons', path: '/document/wheel/buttons' },
+          { title: '默认配置 - defaultConfig', path: '/document/wheel/defaultConfig' },
           { title: '默认样式 - defaultStyle', path: '/document/wheel/defaultStyle' },
           { title: '回调 & 方法', path: '/document/wheel/methods' },
         ]
@@ -26,6 +27,7 @@ module.exports = {
           { title: '边框 - blocks', path: '/document/grid/blocks' },
           { title: '奖品 - prizes', path: '/document/grid/prizes' },
           { title: '抽奖按钮 - button', path: '/document/grid/button' },
+          { title: '默认配置 - defaultConfig', path: '/document/grid/defaultConfig' },
           { title: '默认样式 - defaultStyle', path: '/document/grid/defaultStyle' },
           { title: '中奖标记样式 - activeStyle', path: '/document/grid/activeStyle' },
           { title: '格子布局 - rows & cols', path: '/document/grid/rows-cols' },
