@@ -20,7 +20,7 @@ sidebar: 'auto'
     <wheel-defaultConfig1 />
   </template>
   <template v-slot:text>
-    <li><code>defaultStyle</code>中有一个<code>gutter</code>属性用来控制奖品扇形区域之间的缝隙，默认等于0</li>
+    <li><code>gutter</code>属性用来控制奖品扇形区域之间的缝隙，默认等于 0</li>
     <li>这个缝隙是等距的，不会随着角度的不同而产生弧度</li>
   </template>
 </Exhibition>
