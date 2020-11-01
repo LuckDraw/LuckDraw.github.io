@@ -93,7 +93,7 @@ export default {
     startCallBack () {
       this.$refs.LuckDraw.play()
       setTimeout(() => {
-        this.$refs.LuckDraw.stop(Math.random() * 8 >> 0)
+        this.$refs.LuckDraw.stop(Math.random() * 12 >> 0)
       }, 2000)
     },
     endCallBack (prize) {
