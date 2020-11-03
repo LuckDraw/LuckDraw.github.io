@@ -9,10 +9,10 @@ sidebar: 'auto'
   - <Describe name="borderRadius?: string | number" mean="圆角半径" desc="默认为 0, 配置范围为 0 ~ Infinity" />
   - <Describe name="background: string" mean="背景颜色" desc="可填写16进制颜色哈希值或 rgba" :isRequire="true" />
   - <Describe name="padding: string" mean="内边距" desc="与 css 中 padding 使用方式一样" :isRequire="true" />
-  - <Describe name="paddingTop: string | number" mean="上边距" desc="优先级大于 padding" />
-  - <Describe name="paddingBottom: string | number" mean="下边距" desc="优先级大于 padding" />
-  - <Describe name="paddingLeft: string | number" mean="左边距" desc="优先级大于 padding" />
-  - <Describe name="paddingRight: string | number" mean="右边距" desc="优先级大于 padding" />
+  - <Describe name="paddingTop?: string | number" mean="上边距" desc="优先级大于 padding" />
+  - <Describe name="paddingBottom?: string | number" mean="下边距" desc="优先级大于 padding" />
+  - <Describe name="paddingLeft?: string | number" mean="左边距" desc="优先级大于 padding" />
+  - <Describe name="paddingRight?: string | number" mean="右边距" desc="优先级大于 padding" />
 
 ## 关于绘制边框
 

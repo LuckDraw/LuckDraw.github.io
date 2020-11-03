@@ -1,5 +1,5 @@
 ---
-title: 在 vue2.x / vue3.x 中使用
+title: 在 vue2.x / vue3.x 中使用 vue-luck-draw
 sidebar: false
 ---
 
