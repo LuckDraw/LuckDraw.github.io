@@ -3,12 +3,12 @@
 
 <div align="center">
   <img src="./logo.png" width="200" />
-  <h1>vue-luck-draw lottery component</h1>
-  <p>A turntable/grid canvas based on Vue.js</p>
+  <h1>vue-luck-draw</h1>
+  <p>A Vue component, can realize lucky draw through simple configuration</p>
   <p class="hidden">
     <a href="https://github.com/LuckDraw/vue-luck-draw#readme">简体中文</a>
-    <!-- · -->
-    <!-- <a href="javascript: ;">English</a> -->
+    ·
+    <a href="https://github.com/LuckDraw/vue-luck-draw/en/">English</a>
   </p>
   <p>
     <a href="https://github.com/buuing/vue-luck-draw" target="_black">
@@ -39,11 +39,11 @@
 
 <br />
 
-<h2 class="hidden">Docs & Demo</h2>
+## Docs & Demo
 
-<blockquote class="hidden">
-  <p><a href="https://100px.net?vue-luck-draw" target="_black" rel="nofollow">https://100px.net?vue-luck-draw</a></p>
-</blockquote>
+> **中文**：[https://100px.net?vue](https://100px.net?vue)  
+
+> **English**：**If anyone can help translate the document, please contact me** `ldq404@qq.com`
 
 <br />
 
@@ -73,18 +73,17 @@ import LuckDraw from 'vue-luck-draw/vue3'
 createApp(App).use(LuckDraw).mount('#app')
 ```
 
-3. Using <LuckyWheel /> to render **turntable component** or using <LuckyGrid /> to render **grid component**
-
+3. Using <LuckyWheel /> to render **turntable lottery** or using <LuckyGrid /> to render **grid lottery**
 
 ```vue
 <template>
   <div>
-    <!-- turntable -->
+    <!-- turntable lottery -->
     <LuckyWheel
       style="width: 200px; height: 200px"
       ...your settings
     />
-    <!-- grid -->
+    <!-- grid lottery -->
     <LuckyGrid
       style="width: 200px; height: 200px"
       ...your settings
@@ -104,12 +103,12 @@ Download the `luckdraw.umd.min.js` from the link below and include with a script
 
 ```html
 <div id="app">
-  <!-- turntable -->
+  <!-- turntable lottery -->
   <lucky-wheel
     style="width: 200px; height: 200px"
     ...your settings
   />
-  <!-- grid -->
+  <!-- grid lottery -->
   <lucky-grid
     style="width: 200px; height: 200px"
     ...your settings
@@ -123,5 +122,3 @@ Download the `luckdraw.umd.min.js` from the link below and include with a script
   })
 </script>
 ```
-
-<br />
