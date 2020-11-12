@@ -43,6 +43,7 @@ module.exports = {
           { title: '大转盘抽奖 Demo', path: '/demo/wheel/ymc' },
           { title: '仿抽奖乐大转盘', path: '/demo/wheel/cjl' },
           { title: '仿潘德妈妈大转盘', path: '/demo/wheel/pdmm' },
+          { title: '仿京东大转盘抽京豆', path: '/demo/wheel/jd' },
         ]
       },
       {
