@@ -50,10 +50,10 @@
     <section class="wish">
       <div class="wish-inner">
         <div class="text-wrapper">
-          <h1>🏅欢迎贡献代码</h1>
-          <li class="description">目前抽奖插件基于 Ts 开发，并以此为基础在不同框架上面进行扩展，如果你有熟悉的框架想进行扩展，请在底部寻找我的联系方式</li>
-          <li class="description">目前也急需英语较好的大佬来参与翻译文档的任务，我会在 README 里面展示所有的贡献者</li>
-          <li class="description">如果你们公司设计的抽奖比较好看，也可以提供给我，我会放到演示页面里进行展示</li>
+          <h1>🏅欢迎参与开发</h1>
+          <li class="description"><b>贡献源代码：</b>目前插件基于 Ts 开发然后打包成 Js，并以此为基础在不同框架上面进行扩展，如果你有熟悉的框架想进行扩展，请在底部寻找我的联系方式</li>
+          <li class="description"><b>翻译文档：</b>目前也急需英语较好的同学来参与翻译文档的任务，我会在 README 里面展示所有的贡献者</li>
+          <li class="description"><b>贡献Demo：</b>如果你们公司的抽奖设计图比较好看，也可以提供给我，我会放到演示页面里进行展示</li>
         </div>
         <div class="img-wrapper">
           <img src="../public/code.svg" alt="devices" width="100%" >
@@ -197,6 +197,7 @@ export default {
 .wish-inner li {
   line-height: 26px;
   margin: 10px 0;
+  font-weight: 500;
 }
 .wish-inner>div.img-wrapper {
   max-width: 22rem;
