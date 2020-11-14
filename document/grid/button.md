@@ -49,6 +49,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/grid/button1.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/grid/button1.vue
   </template>

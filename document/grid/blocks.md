@@ -29,6 +29,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/grid/blocks1.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/grid/blocks1.vue
   </template>

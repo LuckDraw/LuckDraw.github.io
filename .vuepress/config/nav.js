@@ -9,6 +9,7 @@ module.exports = {
         {
           text: '使用',
           items: [
+            { text: '在 JavaScript 中使用', link: '/document/js' },
             { text: '在 vue2.x / vue3.x 中使用', link: '/document/vue' }
           ]
         },

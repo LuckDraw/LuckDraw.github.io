@@ -51,6 +51,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/grid/prizes1.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/grid/prizes1.vue
   </template>
@@ -70,6 +73,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/grid/prizes2.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/grid/prizes2.vue
   </template>
@@ -91,6 +97,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/grid/prizes3.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/grid/prizes3.vue
   </template>
@@ -109,6 +118,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/grid/prizes4.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/grid/prizes4.vue
   </template>
@@ -128,6 +140,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/grid/prizes5.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/grid/prizes5.vue
   </template>

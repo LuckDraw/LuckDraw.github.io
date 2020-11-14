@@ -28,6 +28,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/grid/activeStyle1.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/grid/activeStyle1.vue
   </template>

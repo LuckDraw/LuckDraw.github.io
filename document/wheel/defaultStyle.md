@@ -29,6 +29,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/wheel/defaultStyle1.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/wheel/defaultStyle1.vue
   </template>

@@ -30,6 +30,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/grid/defaultStyle1.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/grid/defaultStyle1.vue
   </template>

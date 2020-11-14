@@ -1,0 +1,12 @@
+<div id="my-lucky" style="width: 200px; height: 200px"></div>
+<script src="../web-luck-draw.umd.min.js"></script>
+<script>
+  let luckyWheel = new LuckDraw.LuckyWheel('#my-lucky', {
+    blocks: [{ padding: '10px', background: '#d64737' }],
+    prizes: [
+      { imgs: [{ src: '../examples/img/1.png' }], background: '#f8d384' },
+      { imgs: [{ src: '../examples/img/1.png', width: '30%' }], background: '#f9e3bb' },
+      { imgs: [{ src: '../examples/img/1.png', width: '40%', height: '50%' }] }
+    ],
+  })
+</script>

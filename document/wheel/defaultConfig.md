@@ -26,6 +26,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/wheel/defaultConfig1.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/wheel/defaultConfig1.vue
   </template>
@@ -45,6 +48,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/wheel/defaultConfig2.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/wheel/defaultConfig2.vue
   </template>

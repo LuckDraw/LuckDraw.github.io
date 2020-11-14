@@ -4,7 +4,7 @@
       <div>
         <img class="logo" :src="$withBase('/logo.png')" alt="logo" />
         <h1>幸运抽奖插件（大转盘 / 九宫格）</h1>
-        <div class="desc" style="margin: -2rem">
+        <div class="desc" style="margin: -1rem">
           <Content/>
         </div>
         <router-link class="btn-about" to="/document/vue">快速开始</router-link>
@@ -13,10 +13,57 @@
     <section class="md-content-wrapper">
       <!-- <Content/> -->
     </section>
+        <section class="wish">
+      <div class="wish-inner">
+        <div class="img-wrapper">
+          <img src="../public/frameworks.svg" alt="frameworks" width="70%" >
+        </div>
+        <div class="text-wrapper">
+          <h1>🎉支持多端框架</h1>
+          <li class="description">目前支持原生 Js / Vue2.x / Vue3.x 中使用，后续还会新增其他框架，感谢支持，您的 star 就是对我最大的鼓励</li>
+        </div>
+      </div>
+    </section>
+    <section class="wish">
+      <div class="wish-inner">
+        <div class="text-wrapper">
+          <h1>🎨可适配移动端</h1>
+          <li class="description">抽奖插件会自动根据设备 dpr 调整清晰度，无需担心 canvas 出现绘制模糊的问题</li>
+          <li class="description">并支持使用百分比或 rem 属性来调整移动端布局</li>
+        </div>
+        <div class="img-wrapper">
+          <img src="../public/devices.svg" alt="devices" width="80%" >
+        </div>
+      </div>
+    </section>
+    <section class="wish">
+      <div class="wish-inner">
+        <div class="img-wrapper">
+          <img src="../public/developer.svg" alt="developer" width="90%" >
+        </div>
+        <div class="text-wrapper">
+          <h1>🚀问题与建议</h1>
+          <li class="description">欢迎在 Github 上面的 Issues 提出你的疑惑，我会实时收到提醒，并在不忙的时候第一时间回复你</li>
+        </div>
+      </div>
+    </section>
+    <section class="wish">
+      <div class="wish-inner">
+        <div class="text-wrapper">
+          <h1>🏅欢迎贡献代码</h1>
+          <li class="description">目前抽奖插件基于 Ts 开发，并以此为基础在不同框架上面进行扩展，如果你有熟悉的框架想进行扩展，请在底部寻找我的联系方式</li>
+          <li class="description">目前也急需英语较好的大佬来参与翻译文档的任务，我会在 README 里面展示所有的贡献者</li>
+          <li class="description">如果你们公司设计的抽奖比较好看，也可以提供给我，我会放到演示页面里进行展示</li>
+        </div>
+        <div class="img-wrapper">
+          <img src="../public/code.svg" alt="devices" width="100%" >
+        </div>
+      </div>
+    </section>
     <section class="footer">
       <p>
         <span>
-          本插件完全免费，开源不易，<a href="https://github.com/buuing/vue-luck-draw" target="_black">
+          本插件完全免费，开源不易，<a href="https://github.com/luckdraw" target="_black">
             <b style="color: #ff7f00">如果您觉得好用可以点个 star 支持我</b>
             &ensp;<i class="iconfont reco-github"></i>
             Github
@@ -46,6 +93,10 @@
         <span>
           <i class="iconfont reco-theme"></i>
           <a href="https://github.com/vuepress-reco/vuepress-theme-reco" target="_black">vuepress-theme-reco</a>
+        </span>
+        <span>
+          <i class="iconfont reco-theme"></i>
+          <a href="https://undraw.co" target="_black">undraw.co</a>
         </span>
       </p>
     </section>
@@ -108,7 +159,7 @@ export default {
   width: 100%;
 }
 .home-page-wrapper .footer {
-  border-top: 1px solid #eaecef;
+  border-top: 1px solid #f2f2f2;
   text-align: center;
   padding: 1.3rem 1rem;
 }
@@ -120,6 +171,42 @@ export default {
 .home-page-wrapper .footer p {
   line-height: 1.5rem;
   margin: 10px 0;
+}
+.home-page-wrapper section.wish {
+  overflow: hidden;
+}
+.home-page-wrapper section.wish .wish-inner {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 56rem;
+  width: 100%;
+  min-height: 25rem;
+  display: flex;
+  align-items: center;
+}
+.text-wrapper h1 {
+  display: block;
+}
+.wish:nth-child(2n + 1) {
+  background: #fafafb;
+}
+.wish-inner>div {
+  flex: auto;
+}
+.wish-inner li {
+  line-height: 26px;
+  margin: 10px 0;
+}
+.wish-inner>div.img-wrapper {
+  max-width: 22rem;
+}
+.wish-inner>div.img-wrapper img {
+  display: block;
+}
+.wish-inner>div.text-wrapper {
+  box-sizing: border-box;
+  padding: 0 2rem;
 }
 @media (max-width: 719px) {
   .home-page-wrapper section {

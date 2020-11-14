@@ -89,7 +89,7 @@ export default {
       }, 0)
     },
     startCallBack () {
-      if (!this.luckyNum) return this.$message.error('还剩0次抽奖机会')
+      if (!this.luckyNum) return alert('还剩0次抽奖机会')
       this.$refs.LuckDraw.play()
       setTimeout(() => {
         this.$refs.LuckDraw.stop(Math.random() * 7 >> 0)

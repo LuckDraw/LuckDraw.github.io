@@ -42,6 +42,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/wheel/prizes1.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/wheel/prizes1.vue
   </template>
@@ -61,6 +64,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/wheel/prizes2.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/wheel/prizes2.vue
   </template>
@@ -81,6 +87,9 @@ sidebar: 'auto'
 </Exhibition>
 
 <RecoDemo :collapse="true">
+  <template slot="code-web">
+    <<< @/.vuepress/components/wheel/prizes3.html
+  </template>
   <template slot="code-vue">
     <<< @/.vuepress/components/wheel/prizes3.vue
   </template>
