@@ -23,8 +23,15 @@ module.exports = {
       ]
     },
     { text: '演示', icon: 'reco-api', link: '/demo/wheel/ymc' },
-    { text: '问题&建议', icon: 'reco-faq', link: 'https://github.com/buuing/vue-luck-draw/issues' },
-    { text: 'Github', icon: 'reco-github', link: 'https://github.com/buuing/vue-luck-draw' },
+    {
+      text: '问题&建议',
+      icon: 'reco-faq',
+      items: [
+        { text: 'Js 中的问题', link: 'https://github.com/luckdraw/web-luck-draw/issues' },
+        { text: 'Vue 中的问题', link: 'https://github.com/luckdraw/vue-luck-draw/issues' }
+      ]
+    },
+    { text: 'Github', icon: 'reco-github', link: 'https://github.com/luckdraw' },
   ],
   navEn: {}
 }
