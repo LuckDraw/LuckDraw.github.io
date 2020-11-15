@@ -22,7 +22,7 @@
             <p>自动根据设备 dpr 调整清晰度；无需担心 canvas 出现绘制模糊的问题；并支持使用百分比或 rem 属性来调整移动端布局；</p>
           </div>
         </div>
-        <router-link class="btn-about" to="/document/vue" style="margin-top: 1.5rem">快速开始</router-link>
+        <router-link class="btn-about phong-hide" to="/document/vue" style="margin-top: 1.5rem">快速开始</router-link>
       </div>
     </section>
     <section class="md-content-wrapper">
@@ -304,6 +304,9 @@ export default {
   }
   .home-page-wrapper .plugin>div:nth-child(n+2) {
     display: none;
+  }
+  .phong-hide {
+    display: none !important;
   }
 }
 </style>
