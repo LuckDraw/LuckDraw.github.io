@@ -19,7 +19,7 @@
           <div>
             <img :src="$withBase('/style.svg')" alt="frameworks" width="70%" />
             <h1>响应式</h1>
-            <p>自动根据设备 dpr 调整清晰度；无需担心 canvas 出现绘制模糊的问题；并支持使用百分比或 rem 属性来调整移动端布局；</p>
+            <p>自动根据设备 dpr 调整清晰度；并支持使用百分比或 rem 属性来适配移动端布局；</p>
           </div>
         </div>
         <router-link class="btn-about phong-hide" to="/document/vue" style="margin-top: 1.5rem">快速开始</router-link>
@@ -209,7 +209,7 @@ export default {
   flex-wrap: wrap;
 }
 .home-page-wrapper .plugin>div {
-  padding: 1.5rem 0 1rem;
+  padding: 1.3rem 0 1rem;
   width: 30%;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
   background: #fff;
@@ -224,7 +224,7 @@ export default {
   color: #99a9bf;
   padding: 0 25px;
   line-height: 20px;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 @media (max-width: 719px) {
   .home-page-wrapper section {
