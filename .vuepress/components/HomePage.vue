@@ -6,18 +6,18 @@
         <h1 style="margin: 1.5rem 0">基于原生 Js / Vue 的抽奖插件【大转盘 & 九宫格】</h1>
         <div class="plugin">
           <div>
-            <img :src="$withBase('/start.svg')" alt="frameworks" width="70%" >
+            <img :src="$withBase('/start.svg')" alt="frameworks" width="70%" />
             <h1>自由化</h1>
             <p>奖品 / 文字 / 图片 / 颜色 / 按钮均可自由配置；支持同步 / 异步抽奖；中奖概率前端 / 后端可控；</p>
           </div>
           <div>
-            <img :src="$withBase('/setup.svg')" alt="frameworks" width="70%" >
+            <img :src="$withBase('/setup.svg')" alt="frameworks" width="70%" />
             <h1>多端适配</h1>
             <p>一个支持 JavaScript / Vue2.x / Vue3.x 的抽奖插件；</p>
             <p>基于 React 版本还在开发中...</p>
           </div>
           <div>
-            <img :src="$withBase('/style.svg')" alt="frameworks" width="70%" >
+            <img :src="$withBase('/style.svg')" alt="frameworks" width="70%" />
             <h1>响应式</h1>
             <p>自动根据设备 dpr 调整清晰度；无需担心 canvas 出现绘制模糊的问题；并支持使用百分比或 rem 属性来调整移动端布局；</p>
           </div>
@@ -31,7 +31,7 @@
     <section class="wish">
       <div class="wish-inner">
         <div class="img-wrapper" style="max-width: 34rem;">
-          <img src="../public/github.svg" alt="developer" width="100%" >
+          <img :src="$withBase('/github.svg')" alt="developer" width="100%" />
         </div>
         <div class="text-wrapper">
           <h1>加入我们</h1>
@@ -48,7 +48,7 @@
           <li class="description">欢迎在 <a href="https://github.com/luckdraw" target="_black">Github</a> 上面的 Issues 提出你的疑惑，我会实时收到提醒，并在不忙的时候第一时间回复你</li>
         </div>
         <div class="img-wrapper">
-          <img src="../public/issues.svg" alt="devices" width="100%" >
+          <img :src="$withBase('/issues.svg')" alt="devices" width="100%" />
         </div>
       </div>
     </section>
