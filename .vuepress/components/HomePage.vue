@@ -300,6 +300,7 @@ export default {
     margin: 0 auto;
   }
   .home-page-wrapper .plugin>div {
+    padding: 1rem 0 0 0;
     width: 100%;
   }
   .home-page-wrapper .plugin>div:nth-child(n+2) {
