@@ -1,5 +1,9 @@
 module.exports = {
   matchRoute: {
+    '/js': '/document/js',
+    '/js/': '/document/js',
+    '/vue': '/document/vue',
+    '/vue/': '/document/vue',
     '/vue-luck-draw/lucky-demo': '/demo/wheel/ymc',
     '/vue-luck-draw/lucky-demo/': '/demo/wheel/ymc',
     '/vue-luck-draw/lucky-demo.html': '/demo/wheel/ymc',

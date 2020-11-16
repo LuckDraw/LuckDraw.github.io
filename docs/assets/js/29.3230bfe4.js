@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[29],{638:function(n,t,s){"use strict";s.r(t);var e=s(3),a=Object(e.a)({},(function(){var n=this.$createElement;return(this._self._c||n)("div",{staticClass:"warning"},[this._v("\n  注意: 演示页面下的所有图片和字体都仅用于个人的学习和交流使用, 本插件完全免费且不会产生任何形式上的经济收益\n")])}),[],!1,null,"608a4964",null);t.default=a.exports}}]);
