@@ -3,7 +3,7 @@
 <head></head>
 <body>
   <div id="my-lucky" style="width: 310px; height: 310px"></div>
-  <script src="../web-luck-draw.umd.min.js"></script>
+  <script src="../lucky-canvas.umd.min.js"></script>
   <script>
     // 模拟接口请求奖品列表
     const prizes = []
@@ -29,7 +29,7 @@
       })
     }
     // 创建九宫格抽奖
-    let luckyGrid = new LuckDraw.LuckyGrid('#my-lucky', {
+    let luckyGrid = new LuckyCanvas.LuckyGrid('#my-lucky', {
       prizes: prizes,
       button: {
         x: 1, y: 1,

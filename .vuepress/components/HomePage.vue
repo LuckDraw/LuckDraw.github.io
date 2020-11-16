@@ -115,6 +115,7 @@ export default {
   width: 100%;
   display: block;
   margin: 1rem auto 1rem;
+  user-select: none;
 }
 .home-page-wrapper section.main {
   display: flex;
@@ -193,6 +194,7 @@ export default {
 }
 .wish-inner>div.img-wrapper {
   max-width: 22rem;
+  user-select: none;
 }
 .wish-inner>div.img-wrapper img {
   display: block;
@@ -207,6 +209,7 @@ export default {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  user-select: none;
 }
 .home-page-wrapper .plugin>div {
   padding: 1.3rem 0 1rem;

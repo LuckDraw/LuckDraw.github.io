@@ -27,7 +27,7 @@ module.exports = {
       text: '问题&建议',
       icon: 'reco-faq',
       items: [
-        { text: 'Js 中的问题', link: 'https://github.com/luckdraw/web-luck-draw/issues' },
+        { text: 'Js 中的问题', link: 'https://github.com/luckdraw/lucky-canvas/issues' },
         { text: 'Vue 中的问题', link: 'https://github.com/luckdraw/vue-luck-draw/issues' }
       ]
     },
