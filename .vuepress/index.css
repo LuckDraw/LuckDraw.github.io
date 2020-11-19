@@ -100,3 +100,6 @@ div.footer-wrapper {
 .can-hide .dropdown-wrapper .dropdown-title .arrow {
   margin-left: 0.1rem;
 }
+.content__default h1:first-child {
+  display: block;
+}

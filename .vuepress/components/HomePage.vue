@@ -4,6 +4,14 @@
       <div>
         <img class="logo" :src="$withBase('/web.svg')" alt="logo" style="max-width: 18rem; height: 30%" />
         <h1 style="margin: 1.5rem 0">基于原生 Js / Vue 的抽奖插件【大转盘 & 九宫格】</h1>
+        <p>
+          <a href="https://github.com/LuckDraw/lucky-canvas" target="_black">
+            <img src="https://img.shields.io/github/stars/luckdraw/lucky-canvas?color=%23ffca28&label=lucky-canvas%20%7C%20stars&logo=github&style=flat-square" alt="stars" />
+          </a>&ensp;
+          <a href="https://github.com/LuckDraw/vue-luck-draw" target="_black">
+            <img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%2330a14e&label=vue-luck-draw%20%7C%20stars&logo=github&style=flat-square" alt="stars" />
+          </a>
+        </p>
         <div class="plugin">
           <div>
             <img :src="$withBase('/start.svg')" alt="frameworks" width="70%" />
