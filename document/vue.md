@@ -8,7 +8,7 @@ sidebar: false
 
 <p>
   <a href="https://github.com/LuckDraw/vue-luck-draw" target="_black">
-    <img src="https://img.shields.io/badge/github-%20lucky--canvas%20-30a14e.svg?&logo=github&style=flat-square" alt="author" />
+    <img src="https://img.shields.io/badge/github-%20vue--luck--draw%20-30a14e.svg?&logo=github&style=flat-square" alt="author" />
   </a>
   <a href="https://github.com/LuckDraw/vue-luck-draw/stargazers" target="_black">
     <img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%2330a14e&logo=github&style=flat-square" alt="stars" />
