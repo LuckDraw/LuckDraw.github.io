@@ -5,7 +5,8 @@ module.exports = {
         title: '使用',
         collapsable: false,
         children: [
-          { title: '在 JavaScript 中使用', path: '/document/js' },
+          { title: '在 Js / JQuery 中使用', path: '/document/js' },
+          { title: '在 uni-app 中使用', path: '/document/uni-app' },
           { title: '在 vue2.x / vue3.x 中使用', path: '/document/vue' }
         ]
       },

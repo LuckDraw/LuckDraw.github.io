@@ -3,7 +3,7 @@ sidebar: false
 ---
 
 <h1>
-  在 JavaScript 中使用
+  在 Js / JQuery 中使用
 </h1>
 
 <p>
@@ -23,13 +23,15 @@ sidebar: false
 
 ## 方式 1：通过 script 标签引入
 
-从下面的链接里下载一个叫`lucky-canvas.umd.min.js`的 js 文件, 然后使用 script 标签引入
+> 为了避免 CDN 链接出现异常或波动，我非常建议你**缓存到本地或服务器**
 
-- [https://github.com/luckdraw/lucky-canvas/tree/master/dist](https://github.com/luckdraw/lucky-canvas/tree/master/dist)
+- **最新版本：** [https://cdn.jsdelivr.net/npm/lucky-canvas/umd.min.js](https://cdn.jsdelivr.net/npm/lucky-canvas/umd.min.js)
+- **指定版本：** [https://cdn.jsdelivr.net/npm/lucky-canvas@1.0.6/umd.min.js](https://cdn.jsdelivr.net/npm/lucky-canvas@1.0.6/umd.min.js)
+
 
 ```html
 <div id="my-lucky" style="width: 300px; height: 300px"></div>
-<script src="./lucky-canvas.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucky-canvas/umd.min.js"></script>
 <script>
 
   // 大转盘抽奖

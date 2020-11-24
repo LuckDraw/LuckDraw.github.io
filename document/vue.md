@@ -68,10 +68,20 @@ createApp(App).use(LuckDraw).mount('#app')
 
 ## 方式 2：通过 script 标签引入
 
-从下面的链接里下载一个叫`luckdraw.umd.min.js`的 js 文件, 然后使用 script 标签引入
+> 为了避免 CDN 链接出现异常或波动，我非常建议你**缓存到本地或服务器**
 
-- vue2.x：[https://github.com/buuing/vue-luck-draw/tree/master/dist](https://github.com/buuing/vue-luck-draw/tree/master/dist)
-- vue3.x：[https://github.com/buuing/vue-luck-draw/tree/master/vue3](https://github.com/buuing/vue-luck-draw/tree/master/vue3)
+- **vue2.x：**
+  - **最新版本：** [https://cdn.jsdelivr.net/npm/vue-luck-draw/dist/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw/dist/vue-luck-draw.umd.min.js)
+  - **指定版本：** [https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.0/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.0/vue-luck-draw.umd.min.js)
+
+<span></span>
+
+- **vue3.x：**
+  - **最新版本：** [https://cdn.jsdelivr.net/npm/vue-luck-draw/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw/vue-luck-draw.umd.min.js)
+  - **指定版本：** [https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.0/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.0/vue-luck-draw.umd.min.js)
+
+<!-- - vue2.x：[https://github.com/buuing/vue-luck-draw/tree/master/dist](https://github.com/buuing/vue-luck-draw/tree/master/dist) -->
+<!-- - vue3.x：[https://github.com/buuing/vue-luck-draw/tree/master/vue3](https://github.com/buuing/vue-luck-draw/tree/master/vue3) -->
 
 ```html
 <div id="app">
@@ -86,8 +96,8 @@ createApp(App).use(LuckDraw).mount('#app')
     ...你的配置
   />
 </div>
-<script src="./vue.min.js"></script>
-<script src="./luckdraw.umd.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-luck-draw/dist/vue-luck-draw.umd.min.js"></script>
 <script>
   new Vue({
     el: '#app'
