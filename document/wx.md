@@ -6,14 +6,16 @@ sidebar: false
   在 微信小程序 中使用
 </h1>
 
-## 方式 1：通过 script 标签引入
+## 方式 1：通过 import 引入
 
-> 为了避免 CDN 链接出现异常或波动，我非常建议你**缓存到本地或服务器**
+<!-- > 为了避免 CDN 链接出现异常或波动，我非常建议你**缓存到本地或服务器**
 
 - **最新版本：** [https://cdn.jsdelivr.net/npm/lucky-canvas/umd.min.js](https://cdn.jsdelivr.net/npm/lucky-canvas/umd.min.js)
-- **指定版本：** [https://cdn.jsdelivr.net/npm/lucky-canvas@1.0.8/umd.min.js](https://cdn.jsdelivr.net/npm/lucky-canvas@1.0.8/umd.min.js)
+- **指定版本：** [https://cdn.jsdelivr.net/npm/lucky-canvas@1.0.8/umd.min.js](https://cdn.jsdelivr.net/npm/lucky-canvas@1.0.8/umd.min.js) -->
 
-> **注意：`版本 >= v1.0.8` 才支持在微信小程序中使用，下面的代码为微信小程序的原生语法**
+- **注意：`版本 >= v1.0.8` 才支持在微信小程序中使用，下面的代码为微信小程序的原生语法**
+
+- **注意：`v1.0.8`暂未发布**
 
 ```html
 <view>
