@@ -10,8 +10,9 @@ module.exports = {
           text: '使用',
           items: [
             { text: '在 Js / JQuery 中使用', link: '/document/js' },
+            { text: '在 vue2.x / vue3.x 中使用', link: '/document/vue' },
             { text: '在 uni-app 中使用', link: '/document/uni-app' },
-            { text: '在 vue2.x / vue3.x 中使用', link: '/document/vue' }
+            { text: '在 微信小程序 中使用', link: '/document/wx' },
           ]
         },
         {

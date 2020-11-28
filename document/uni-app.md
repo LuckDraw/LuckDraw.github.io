@@ -6,23 +6,7 @@ sidebar: false
   在 uni-app 中使用
 </h1>
 
-<p>
-  <a href="https://github.com/LuckDraw/lucky-canvas" target="_black">
-    <img src="https://img.shields.io/badge/github-%20lucky--canvas%20-ffca28.svg?&logo=github&style=flat-square" alt="author" />
-  </a>
-  <a href="https://github.com/LuckDraw/lucky-canvas/stargazers" target="_black">
-    <img src="https://img.shields.io/github/stars/luckdraw/lucky-canvas?color=%23ffca28&logo=github&style=flat-square" alt="stars" />
-  </a>
-  <a href="https://www.npmjs.com/package/lucky-canvas" target="_black">
-    <img src="https://img.shields.io/github/package-json/v/luckdraw/lucky-canvas?color=%23ffca28&logo=npm&style=flat-square" alt="version" />
-  </a>
-  <a href="https://www.npmjs.com/package/lucky-canvas" target="_black">
-    <img src="https://img.shields.io/npm/dm/lucky-canvas?color=%23ffca28&logo=npm&style=flat-square" alt="downloads" />
-  </a>
-</p>
-
-
-- **注意：`uni-app`目前只适配了`H5`和`Vue`, 目前`微信小程序`版本已适配完毕还在测试当中**
+> <p style="color: #3eaf7c; font-weight: 700">注意：uni-app 目前只适配了 H5 和 Vue，小程序版本根据 canvas 考虑的兼容问题太多了，还得稍微延后</p>
 
 ## 方式 1：通过 import 引入
 

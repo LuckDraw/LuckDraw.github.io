@@ -6,8 +6,9 @@ module.exports = {
         collapsable: false,
         children: [
           { title: '在 Js / JQuery 中使用', path: '/document/js' },
-          { title: '在 uni-app 中使用', path: '/document/uni-app' },
-          { title: '在 vue2.x / vue3.x 中使用', path: '/document/vue' }
+          { title: '在 vue2.x / vue3.x 中使用', path: '/document/vue' },
+          { title: '在 uni-app 中使用 (开发中)', path: '/document/uni-app' },
+          { title: '在 微信小程序 中使用 (应急方案)', path: '/document/wx' },
         ]
       },
       {
