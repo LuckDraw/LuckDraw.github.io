@@ -6,98 +6,98 @@ sidebar: false
   在 微信小程序 中使用
 </h1>
 
-> <p style="color: #3eaf7c; font-weight: 700">我这周得去爬山所以没有时间封装，着急的同学可以先按照下面的 demo 进行改造，不急的话我会在下周针对微信小程序进行组件封装 / 优化传参 / 方法调用</p>
+## 方式 1：通过 npm 安装
 
-## 方式 1：通过 import 引入（应急方案）
+1. 先找到小程序项目的根目录，看是否有`package.json`文件，**如果没有就执行下面的命令**来创建该文件
 
-把下面的 js 文件下载到项目中通过 import 引入
+```shell
+npm init -y
+```
 
-- **指定版本：** [https://cdn.jsdelivr.net/npm/lucky-canvas@1.0.8/dist/lucky-canvas.cjs.min.js](https://cdn.jsdelivr.net/npm/lucky-canvas@1.0.8/dist/lucky-canvas.cjs.min.js)
+2. 安装 npm 包
 
-- **注意：下面的代码为微信小程序的原生语法**
+```shell
+npm install mini-luck-draw
+```
+
+3. 构建 npm
+
+`微信开发者工具`找到左上角点击 `工具` > `构建 npm` > `构建成功`
+
+4. 引入自定义组件
+
+```json
+{
+  "usingComponents": {
+    "lucky-wheel":"/miniprogram_npm/mini-luck-draw/lucky-wheel/index",
+    "lucky-grid":"/miniprogram_npm/mini-luck-draw/lucky-grid/index"
+  }
+}
+```
+
+4. 我在这里提供一个简略的 demo 供你进行测试
 
 ```html
 <view>
-  <canvas
-    type="2d"
-    id="my-lucky"
-    bindtouchstart="toPlay"
-    style="width: 600rpx; height: 600rpx; margin: 0 auto"
-  ></canvas>
+  <lucky-wheel
+    id="myLucky"
+    width="500rpx"
+    height="500rpx"
+    blocks="{{blocks}}"
+    prizes="{{prizes}}"
+    buttons="{{buttons}}"
+    defaultStyle="{{defaultStyle}}"
+    bindstart="start"
+    bindend="end"
+  />
 </view>
 ```
 
 ```js
 const app = getApp()
-import { LuckyWheel } from './lucky-canvas.cjs.min.js'
 Page({
-  toPlay (e) {
-    const ctx = this.ctx
-    ctx.beginPath()
-    ctx.arc(0, 0, this.$lucky.maxBtnRadius, 0, Math.PI * 2, false)
-    if (!ctx.isPointInPath(e.changedTouches[0].x * this.dpr, e.changedTouches[0].y * this.dpr)) return
-    // 触发 lucky-canvas 的抽奖逻辑
-    this.$lucky.startCallback()
+  data: {
+    prizes: [
+      { title: '1元红包', background: '#f9e3bb', fonts: [{ text: '1元红包', top: '18%' }] },
+      { title: '100元红包', background: '#f8d384', fonts: [{ text: '100元红包', top: '18%' }] },
+      { title: '0.5元红包', background: '#f9e3bb', fonts: [{ text: '0.5元红包', top: '18%' }] },
+      { title: '2元红包', background: '#f8d384', fonts: [{ text: '2元红包', top: '18%' }] },
+      { title: '10元红包', background: '#f9e3bb', fonts: [{ text: '10元红包', top: '18%' }] },
+      { title: '50元红包', background: '#f8d384', fonts: [{ text: '50元红包', top: '18%' }] },
+    ],
+    defaultStyle: {
+      fontColor: '#d64737',
+      fontSize: '14px'
+    },
+    blocks: [
+      { padding: '13px', background: '#d64737' }
+    ],
+    buttons: [
+      { radius: '50px', background: '#d64737' },
+      { radius: '45px', background: '#fff' },
+      { radius: '41px', background: '#f6c66f', pointer: true },
+      {
+        radius: '35px', background: '#ffdea0',
+        fonts: [{ text: '开始\n抽奖', fontSize: '18px', top: -18 }]
+      }
+    ],
   },
-  onLoad: function () {
-    const query = wx.createSelectorQuery()
-    query.select('#my-lucky').fields({ node: true, size: true }).exec((res) => {
-      const canvas = this.canvas = res[0].node
-      const dpr = this.dpr = wx.getSystemInfoSync().pixelRatio
-      this.ctx = canvas.getContext('2d')
-      canvas.width = res[0].width * dpr
-      canvas.height = res[0].height * dpr
-      this.ctx.scale(dpr, dpr)
-      const $lucky = this.$lucky = new LuckyWheel({
-        width: res[0].width,
-        height: res[0].width,
-        ctx: this.ctx
-      }, {
-        prizes: [
-          { title: '1元红包', background: '#f9e3bb', fonts: [{ text: '1元红包', top: '18%' }] },
-          { title: '100元红包', background: '#f8d384', fonts: [{ text: '100元红包', top: '18%' }] },
-          { title: '0.5元红包', background: '#f9e3bb', fonts: [{ text: '0.5元红包', top: '18%' }] },
-          { title: '2元红包', background: '#f8d384', fonts: [{ text: '2元红包', top: '18%' }] },
-          { title: '10元红包', background: '#f9e3bb', fonts: [{ text: '10元红包', top: '18%' }] },
-          { title: '50元红包', background: '#f8d384', fonts: [{ text: '50元红包', top: '18%' }] },
-        ],
-        defaultStyle: {
-          fontColor: '#d64737',
-          fontSize: '14px'
-        },
-        blocks: [
-          { padding: '13px', background: '#d64737' }
-        ],
-        buttons: [
-          { radius: '50px', background: '#d64737' },
-          { radius: '45px', background: '#fff' },
-          { radius: '41px', background: '#f6c66f', pointer: true },
-          {
-            radius: '35px', background: '#ffdea0',
-            fonts: [{ text: '开始\n抽奖', fontSize: '18px', top: -18 }]
-          }
-        ],
-        start: function () {
-          // 旋转并开始游戏
-          $lucky.play()
-          // 利用定时器模拟接口调用
-          setTimeout(() => {
-            // 得到中奖索引
-            const index = Math.random() * 6 >> 0
-            // 开始缓慢停止
-            $lucky.stop(index)
-          }, 3000)
-        },
-        end: function (prize) {
-          console.log(`恭喜你获得${prize.title}`)
-        },
-      })
-      // 覆盖window对象的一些方法
-      this.$lucky.rAF = res[0].node.requestAnimationFrame
-      this.$lucky.cAF = res[0].node.cancelAnimationFrame
-      this.$lucky.setInterval = setInterval
-      this.$lucky.clearInterval = clearInterval
-    })
+  start () {
+    // 获取抽奖组件实例
+    const child = this.selectComponent('#myLucky')
+    // 调用play方法开始旋转
+    child.$lucky.play()
+    // 用定时器模拟请求接口
+    setTimeout(() => {
+      // 3s 后得到中奖索引
+      const index = Math.random() * 6 >> 0
+      // 调用stop方法然后缓慢停止
+      child.$lucky.stop(index)
+    }, 3000)
+  },
+  end (event) {
+    // 中奖奖品详情
+    console.log(event.detail)
   }
 })
 ```
