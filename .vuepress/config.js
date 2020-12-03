@@ -9,7 +9,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '基于原生 Js / Vue 的抽奖插件【大转盘 & 九宫格】',
+      title: '基于 Js / JQuery / Vue / 微信小程序 / uni-app 的抽奖插件【大转盘 & 九宫格】',
       description: '🎉一个支持 JavaScript / Vue2.x / Vue3.x 的（大转盘抽奖 / 九宫格抽奖）luckydraw 插件，🎨奖品 / 文字 / 图片 / 颜色 / 按钮均可配置，支持同步 / 异步抽奖，🏅概率前 / 后端可控，可根据 dpr 自动调整清晰度适配移动端'
     },
     // '/en/': {

@@ -3,7 +3,7 @@
     <section class="main">
       <div>
         <img class="logo" :src="$withBase('/web.svg')" alt="logo" style="max-width: 18rem; height: 30%" />
-        <h1 style="margin: 1.8rem 0">基于原生 Js / Vue 的抽奖插件【大转盘 & 九宫格】</h1>
+        <h1 style="margin: 1.8rem 0">基于 Js / JQuery / Vue / 微信小程序 / uni-app 的抽奖插件【大转盘 & 九宫格】</h1>
         <div class="plugin">
           <div>
             <img :src="$withBase('/start.svg')" alt="frameworks" width="70%" />
