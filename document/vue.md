@@ -8,16 +8,7 @@ sidebar: false
 
 <p>
   <a href="https://github.com/LuckDraw/vue-luck-draw" target="_black">
-    <img src="https://img.shields.io/badge/github-%20vue--luck--draw%20-30a14e.svg?&logo=github&style=flat-square" alt="author" />
-  </a>
-  <a href="https://github.com/LuckDraw/vue-luck-draw/stargazers" target="_black">
-    <img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%2330a14e&logo=github&style=flat-square" alt="stars" />
-  </a>
-  <a href="https://www.npmjs.com/package/vue-luck-draw" target="_black">
-    <img src="https://img.shields.io/github/package-json/v/luckdraw/vue-luck-draw?color=%2330a14e&logo=npm&style=flat-square" alt="version" />
-  </a>
-  <a href="https://www.npmjs.com/package/vue-luck-draw" target="_black">
-    <img src="https://img.shields.io/npm/dm/vue-luck-draw?color=%2330a14e&logo=npm&style=flat-square" alt="downloads" />
+    <img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%23ffca28&label=vue-luck-draw%20%7C%20stars&logo=github&style=flat-square" alt="stars" />
   </a>
 </p>
 

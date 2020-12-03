@@ -8,16 +8,7 @@ sidebar: false
 
 <p>
   <a href="https://github.com/LuckDraw/lucky-canvas" target="_black">
-    <img src="https://img.shields.io/badge/github-%20lucky--canvas%20-ffca28.svg?&logo=github&style=flat-square" alt="author" />
-  </a>
-  <a href="https://github.com/LuckDraw/lucky-canvas/stargazers" target="_black">
-    <img src="https://img.shields.io/github/stars/luckdraw/lucky-canvas?color=%23ffca28&logo=github&style=flat-square" alt="stars" />
-  </a>
-  <a href="https://www.npmjs.com/package/lucky-canvas" target="_black">
-    <img src="https://img.shields.io/github/package-json/v/luckdraw/lucky-canvas?color=%23ffca28&logo=npm&style=flat-square" alt="version" />
-  </a>
-  <a href="https://www.npmjs.com/package/lucky-canvas" target="_black">
-    <img src="https://img.shields.io/npm/dm/lucky-canvas?color=%23ffca28&logo=npm&style=flat-square" alt="downloads" />
+    <img src="https://img.shields.io/github/stars/luckdraw/lucky-canvas?color=%23ffca28&label=lucky-canvas%20%7C%20stars&logo=github&style=flat-square" alt="stars" />
   </a>
 </p>
 

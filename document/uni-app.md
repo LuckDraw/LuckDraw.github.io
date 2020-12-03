@@ -6,6 +6,12 @@ sidebar: false
   在 uni-app 中使用
 </h1>
 
+<p>
+  <a href="https://github.com/LuckDraw/uni-luck-draw" target="_black">
+    <img src="https://img.shields.io/github/stars/luckdraw/uni-luck-draw?color=%23ffca28&label=uni-luck-draw%20%7C%20stars&logo=github&style=flat-square" alt="stars" />
+  </a>
+</p>
+
 > 当前 uni-app 中各端适配情况
 > - H5端 编译正常
 > - app端 待测试

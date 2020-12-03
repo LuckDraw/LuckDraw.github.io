@@ -3,15 +3,7 @@
     <section class="main">
       <div>
         <img class="logo" :src="$withBase('/web.svg')" alt="logo" style="max-width: 18rem; height: 30%" />
-        <h1 style="margin: 1.5rem 0">基于原生 Js / Vue 的抽奖插件【大转盘 & 九宫格】</h1>
-        <p>
-          <a href="https://github.com/LuckDraw/lucky-canvas" target="_black">
-            <img src="https://img.shields.io/github/stars/luckdraw/lucky-canvas?color=%23ffca28&label=lucky-canvas%20%7C%20stars&logo=github&style=flat-square" alt="stars" />
-          </a>&ensp;
-          <a href="https://github.com/LuckDraw/vue-luck-draw" target="_black">
-            <img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%2330a14e&label=vue-luck-draw%20%7C%20stars&logo=github&style=flat-square" alt="stars" />
-          </a>
-        </p>
+        <h1 style="margin: 1.8rem 0">基于原生 Js / Vue 的抽奖插件【大转盘 & 九宫格】</h1>
         <div class="plugin">
           <div>
             <img :src="$withBase('/start.svg')" alt="frameworks" width="70%" />
@@ -21,13 +13,13 @@
           <div>
             <img :src="$withBase('/setup.svg')" alt="frameworks" width="70%" />
             <h1>多端适配</h1>
-            <p>一个支持 JavaScript / Vue2.x / Vue3.x 的抽奖插件；</p>
+            <p>一个支持 Js / JQuery / Vue / 微信小程序 / uni-app 的抽奖插件；</p>
             <p>基于 React 版本还在开发中...</p>
           </div>
           <div>
             <img :src="$withBase('/style.svg')" alt="frameworks" width="70%" />
             <h1>响应式</h1>
-            <p>自动根据设备 dpr 调整清晰度；并支持使用百分比或 rem 属性来适配移动端布局；</p>
+            <p>自动根据设备 dpr 适配清晰度；并支持使用 百分比 / rem / rpx 属性来调整移动端布局；</p>
           </div>
         </div>
         <router-link class="btn-about phong-hide" to="/document/vue" style="margin-top: 1.5rem">快速开始</router-link>
@@ -43,9 +35,62 @@
         </div>
         <div class="text-wrapper">
           <h1>加入我们</h1>
-          <li class="description"><b>贡献源代码：</b>目前插件基于 Ts 开发然后打包成 Js，并以此为基础在不同框架上面进行扩展，如果你有熟悉的框架想进行扩展，请在底部寻找我的联系方式</li>
+          <li class="description"><b>贡献源代码：</b>目前插件基于 Ts + Rollup 开发打包 Js，并以此为基础在不同框架上面进行扩展，如果你有熟悉的框架想进行扩展，请在底部寻找我的联系方式</li>
           <li class="description"><b>翻译文档：</b>目前也急需英语较好的同学来参与翻译文档的任务，我会在 README 里面展示所有的贡献者</li>
           <li class="description"><b>贡献Demo：</b>如果你们公司的抽奖设计图比较好看，也可以提供给我，我会放到演示页面里进行展示</li>
+        </div>
+      </div>
+    </section>
+    <section class="wish">
+      <div class="wish-inner">
+        <div class="text-wrapper">
+          <h1>多端适配情况</h1>
+          <table>
+            <thead>
+              <tr style="background: #fafafb">
+                <td align="center">npm 包</td>
+                <td align="center">支持的框架</td>
+                <td align="center">最新版本</td>
+                <td align="center">下载量（月）</td>
+                <td align="center">Star</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background: #ecf5ff">
+                <td align="center"><a href="https://github.com/LuckDraw/lucky-canvas" target="_black">lucky-canvas</a></td>
+                <td align="center">Js / JQuery</td>
+                <td align="center"><img src="https://img.shields.io/github/package-json/v/luckdraw/lucky-canvas?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/dm/lucky-canvas?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
+                <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/lucky-canvas?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
+              </tr>
+              <tr style="background: #f0f9eb">
+                <td align="center"><a href="https://github.com/LuckDraw/vue-luck-draw" target="_black">vue-luck-draw</a></td>
+                <td align="center">Vue2.x / Vue3.x</td>
+                <td align="center"><img src="https://img.shields.io/github/package-json/v/luckdraw/vue-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/dm/vue-luck-draw?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
+                <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
+              </tr>
+              <tr style="background: #fef0f0">
+                <td align="center">react-luck-draw</td>
+                <td align="center">React</td>
+                <td align="center" colspan="3">开发中...</td>
+              </tr>
+              <tr style="background: #fdf6ec">
+                <td align="center"><a href="https://github.com/LuckDraw/mini-luck-draw" target="_black">mini-luck-draw</a></td>
+                <td align="center">原生微信小程序</td>
+                <td align="center"><img src="https://img.shields.io/github/package-json/v/luckdraw/mini-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/dm/mini-luck-draw?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
+                <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/mini-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
+              </tr>
+              <tr style="background: #fdf6ec">
+                <td align="center"><a href="https://github.com/LuckDraw/uni-luck-draw" target="_black">uni-luck-draw</a></td>
+                <td align="center">uni-app</td>
+                <td align="center"><img src="https://img.shields.io/github/package-json/v/luckdraw/uni-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/dm/uni-luck-draw?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
+                <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/uni-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>

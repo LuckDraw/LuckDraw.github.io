@@ -94,9 +94,9 @@ div.footer-wrapper {
 .home-page-wrapper table img {
   transform: translateY(2px);
 }
-.home-page-wrapper table tr:nth-child(2n) {
-  background-color: #fafafb;
-}
+/* .home-page-wrapper table tr:nth-child(n) {
+  background-color: #f0f9eb;
+} */
 .can-hide .dropdown-wrapper .dropdown-title .arrow {
   margin-left: 0.1rem;
 }

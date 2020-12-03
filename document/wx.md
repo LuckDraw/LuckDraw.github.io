@@ -6,6 +6,12 @@ sidebar: false
   在 微信小程序（原生语法）中使用
 </h1>
 
+<p>
+  <a href="https://github.com/LuckDraw/mini-luck-draw" target="_black">
+    <img src="https://img.shields.io/github/stars/luckdraw/mini-luck-draw?color=%23ffca28&label=mini-luck-draw%20%7C%20stars&logo=github&style=flat-square" alt="stars" />
+  </a>
+</p>
+
 ## 方式 1：通过 npm 安装
 
 1. 先找到小程序项目的根目录，看是否有`package.json`文件，**如果没有就执行下面的命令**来创建该文件
