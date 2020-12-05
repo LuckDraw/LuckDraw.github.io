@@ -1,7 +1,11 @@
-<div id="my-lucky" style="width: 200px; height: 200px"></div>
-<script src="../lucky-canvas.umd.min.js"></script>
+<div id="my-lucky"></div>
+<script src="https://cdn.jsdelivr.net/npm/lucky-canvas/dist/lucky-canvas.umd.min.js"></script>
 <script>
-  let luckyWheel = new LuckyCanvas.LuckyWheel('#my-lucky', {
+  let luckyWheel = new LuckyCanvas.LuckyWheel({
+    el: '#my-lucky',
+    width: '200px',
+    height: '200px'
+  }, {
     blocks: [{ padding: '10px', background: '#d64737' }],
     prizes: [
       { fonts: [{ text: '0' }], background: '#f8d384' },

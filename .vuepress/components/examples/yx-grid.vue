@@ -1,7 +1,8 @@
 <template>
   <LuckyGrid
-    style="width: 310px; height: 330px"
     ref="LuckDraw"
+    width="310px"
+    height="330px"
     :prizes="prizes"
     :blocks="blocks"
     :button="button"

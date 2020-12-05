@@ -1,6 +1,7 @@
 <template>
   <LuckyGrid
-    style="width: 200px; height: 200px"
+    width="200px"
+    height="200px"
     :demo="true"
     :blocks="blocks"
     :prizes="prizes"

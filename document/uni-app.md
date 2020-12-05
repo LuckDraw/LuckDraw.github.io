@@ -60,8 +60,8 @@ yarn add uni-luck-draw
   import LuckyGrid from 'uni-luck-draw/lucky-grid' // 九宫格
 
   // 如果你是通过 HBuilderX 导入插件，那你需要指定一下路径
-  // import LuckyWheel from './components/uni-luck-draw/lucky-wheel' // 大转盘
-  // import LuckyGrid from './components/uni-luck-draw/lucky-grid' // 九宫格
+  // import LuckyWheel from '@/components/uni-luck-draw/lucky-wheel' // 大转盘
+  // import LuckyGrid from '@/components/uni-luck-draw/lucky-grid' // 九宫格
 
   export default {
     // 注册组件

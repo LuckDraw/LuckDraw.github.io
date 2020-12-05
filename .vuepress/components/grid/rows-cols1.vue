@@ -1,6 +1,7 @@
 <template>
   <LuckyGrid
-    style="width: 265px; height: 200px"
+    width="265px"
+    height="200px"
     rows="3"
     cols="4"
     :demo="true"

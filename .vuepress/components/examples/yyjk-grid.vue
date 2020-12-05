@@ -1,7 +1,8 @@
 <template>
   <LuckyGrid
-    style="width: 310px; height: 310px"
     ref="LuckDraw"
+    width="300px"
+    height="300px"
     :prizes="prizes"
     :button="btnConfig"
     :blocks="blocks"
@@ -82,8 +83,8 @@ export default {
           let item = data[i]
           this.prizes.push({
             index: i, x: axis[i][0], y: axis[i][1],
-            fonts: [{ text: item.name, top: '72%' }],
-            imgs: [{ src: item.img, width: '55%', top: '10%' }]
+            fonts: [{ text: item.name, top: '70%' }],
+            imgs: [{ src: item.img, width: '55%', top: '8%' }]
           })
         }
       }, 0)

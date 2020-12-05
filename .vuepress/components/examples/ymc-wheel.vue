@@ -1,7 +1,8 @@
 <template>
   <LuckyWheel
-    style="width: 310px; height: 310px"
     ref="LuckyWheel"
+    width="300px"
+    height="300px"
     :prizes="prizes"
     :default-style="defaultStyle"
     :blocks="blocks"

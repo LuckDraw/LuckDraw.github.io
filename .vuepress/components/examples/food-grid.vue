@@ -4,6 +4,8 @@
     <LuckyGrid
       class="luck-draw"
       ref="LuckDraw"
+      width="280px"
+      height="280px"
       cols="4"
       rows="4"
       :prizes="prizes"

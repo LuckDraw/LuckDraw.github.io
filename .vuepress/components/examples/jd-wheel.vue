@@ -5,6 +5,8 @@
     <LuckyWheel
       class="luck-draw"
       ref="LuckyWheel"
+      width="275px"
+      height="275px"
       :prizes="prizes"
       :buttons="buttons"
       :default-style="defaultStyle"

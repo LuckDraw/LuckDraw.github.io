@@ -1,7 +1,11 @@
-<div id="my-lucky" style="width: 265px; height: 200px"></div>
-<script src="../lucky-canvas.umd.min.js"></script>
+<div id="my-lucky"></div>
+<script src="https://cdn.jsdelivr.net/npm/lucky-canvas/dist/lucky-canvas.umd.min.js"></script>
 <script>
-  let luckyGrid = new LuckyCanvas.LuckyGrid('#my-lucky', {
+  let luckyGrid = new LuckyCanvas.LuckyGrid({
+    el: '#my-lucky',
+    width: '265px',
+    height: '200px'
+  }, {
     rows: 3,
     cols: 4,
     blocks: [{ padding: '5px', background: '#ff4a4c', borderRadius: 10 }],

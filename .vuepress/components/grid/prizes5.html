@@ -1,10 +1,14 @@
 <!-- 左边3宫格 -->
-<div id="my-lucky1" style="width: 200px; height: 200px"></div>
+<div id="my-lucky1"></div>
 <!-- 右边4宫格 -->
-<div id="my-lucky2" style="width: 200px; height: 200px; margin-top: 10px"></div>
-<script src="../lucky-canvas.umd.min.js"></script>
+<div id="my-lucky2" style="margin-top: 10px"></div>
+<script src="https://cdn.jsdelivr.net/npm/lucky-canvas/dist/lucky-canvas.umd.min.js"></script>
 <script>
-  let luckyGrid1 = new LuckyCanvas.LuckyGrid('#my-lucky1', {
+  let luckyGrid1 = new LuckyCanvas.LuckyGrid({
+    el: '#my-lucky1',
+    width: '200px',
+    height: '200px'
+  }, {
     blocks: [{ padding: '5px', background: '#ff4a4c', borderRadius: 10 }],
     prizes: [
       { x: 0, y: 0, col: 3 },
@@ -12,7 +16,11 @@
       { x: 0, y: 1, row: 2 }
     ],
   })
-  let luckyGrid2 = new LuckyCanvas.LuckyGrid('#my-lucky2', {
+  let luckyGrid2 = new LuckyCanvas.LuckyGrid({
+    el: '#my-lucky2',
+    width: '200px',
+    height: '200px'
+  }, {
     blocks: [{ padding: '5px', background: '#ff4a4c', borderRadius: 10 }],
     prizes: [
       { x: 0, y: 0, col: 2 },

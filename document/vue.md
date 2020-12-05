@@ -3,14 +3,11 @@ sidebar: false
 ---
 
 <h1>
-  在 vue2.x / vue3.x 中使用
-</h1>
-
-<p>
+  在 vue2.x / vue3.x 中使用&ensp;
   <a href="https://github.com/LuckDraw/vue-luck-draw" target="_black">
-    <img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%23ffca28&label=vue-luck-draw%20%7C%20stars&logo=github&style=flat-square" alt="stars" />
+    <img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%233eaf7c&label=vue-luck-draw%20%7C%20stars&logo=github&style=flat-square" style="vertical-align: bottom" alt="stars" />
   </a>
-</p>
+</h1>
 
 ## 方式 1：通过 import 引入
 
@@ -43,12 +40,14 @@ createApp(App).use(LuckDraw).mount('#app')
   <div>
     <!-- 大转盘抽奖 -->
     <LuckyWheel
-      style="width: 200px; height: 200px"
+      width="300px"
+      height="300px"
       ...你的配置
     />
     <!-- 九宫格抽奖 -->
     <LuckyGrid
-      style="width: 200px; height: 200px"
+      width="300px"
+      height="300px"
       ...你的配置
     />
   </div>
@@ -63,25 +62,27 @@ createApp(App).use(LuckDraw).mount('#app')
 
 - **vue2.x：**
   - **最新版本：** [https://cdn.jsdelivr.net/npm/vue-luck-draw/dist/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw/dist/vue-luck-draw.umd.min.js)
-  - **指定版本：** [https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.0/dist/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.0/dist/vue-luck-draw.umd.min.js)
+  - **指定版本：** [https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.1/dist/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.1/dist/vue-luck-draw.umd.min.js)
 
 <span></span>
 
 - **vue3.x：**
   - **最新版本：** [https://cdn.jsdelivr.net/npm/vue-luck-draw/vue3/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw/vue3/vue-luck-draw.umd.min.js)
-  - **指定版本：** [https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.0/vue3/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.0/vue3/vue-luck-draw.umd.min.js)
+  - **指定版本：** [https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.1/vue3/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.1/vue3/vue-luck-draw.umd.min.js)
 
 
 ```html
 <div id="app">
   <!-- 大转盘抽奖 -->
   <lucky-wheel
-    style="width: 200px; height: 200px"
+    width="300px"
+    height="300px"
     ...你的配置
   />
   <!-- 九宫格抽奖 -->
   <lucky-grid
-    style="width: 200px; height: 200px"
+    width="300px"
+    height="300px"
     ...你的配置
   />
 </div>
@@ -90,6 +91,9 @@ createApp(App).use(LuckDraw).mount('#app')
 <script>
   new Vue({
     el: '#app'
+    data () {
+      return {}
+    }
   })
 </script>
 ```

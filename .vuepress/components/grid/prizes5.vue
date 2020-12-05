@@ -2,13 +2,17 @@
   <div>
     <!-- 左边3宫格 -->
     <LuckyGrid
-      style="width: 200px; height: 200px; float: left"
+      style="float: left"
+      width="200px"
+      height="200px"
       :blocks="blocks1"
       :prizes="prizes1"
     />
     <!-- 右边4宫格 -->
     <LuckyGrid
-      style="width: 200px; height: 200px; float: left; margin-left: 10px"
+      style="float: left; margin-left: 10px"
+      width="200px"
+      height="200px"
       :blocks="blocks2"
       :prizes="prizes2"
     />
