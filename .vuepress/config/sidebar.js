@@ -55,7 +55,8 @@ module.exports = {
         children: [
           { title: '九宫格抽奖 Demo', path: '/demo/grid/yyjk' },
           { title: '仿网易严选九宫格', path: '/demo/grid/yx' },
-          { title: '仿某开源九宫格', path: '/demo/grid/jq1' },
+          { title: '仿网易云游戏九宫格', path: '/demo/grid/yyx' },
+          { title: '仿新东方小程序抽奖', path: '/demo/grid/xdf' },
           { title: '吃货大转盘十二宫格', path: '/demo/grid/food' },
         ]
       },
