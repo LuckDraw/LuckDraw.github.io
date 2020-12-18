@@ -37,13 +37,13 @@
           <h1>加入我们</h1>
           <li class="description"><b>贡献源代码：</b>目前插件基于 Ts + Rollup 开发打包 Js，并以此为基础在不同框架上面进行扩展，如果你有熟悉的框架想进行扩展，请在底部寻找我的联系方式</li>
           <li class="description"><b>翻译文档：</b>目前也急需英语较好的同学来参与翻译文档的任务，我会在 README 里面展示所有的贡献者</li>
-          <li class="description"><b>贡献Demo：</b>如果你们公司的抽奖设计图比较好看，也可以提供给我，我会放到演示页面里进行展示</li>
+          <li class="description"><b>贡献Demo：</b>如果你们公司的抽奖设计图比较好看，也可以提供给我，所有贡献者都会展示在下面</li>
         </div>
       </div>
         <div class="text-wrapper stargazers">
           <h1 style="margin-top: -40px">贡献者</h1>
           <a v-for="item in stargazers"  :href="item.html_url" target="_black">
-            <img :src="item.avatar_url" width="40">
+            <img :src="item.avatar_url" :title="item.login" />
           </a>
         </div>
     </section>
@@ -320,7 +320,7 @@ export default {
   width: 100%;
 }
 .stargazers img {
-  width: 30px;
+  width: 40px;
   border-radius: 50%;
   margin: 3px;
   box-shadow: 0 1px 7px 0 rgba(0,0,0,0.3);
