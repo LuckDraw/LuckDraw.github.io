@@ -40,6 +40,12 @@
           <li class="description"><b>贡献Demo：</b>如果你们公司的抽奖设计图比较好看，也可以提供给我，我会放到演示页面里进行展示</li>
         </div>
       </div>
+        <div class="text-wrapper stargazers">
+          <h1 style="margin-top: -40px">贡献者</h1>
+          <a v-for="item in stargazers"  :href="item.html_url" target="_black">
+            <img :src="item.avatar_url" width="40">
+          </a>
+        </div>
     </section>
     <section class="wish">
       <div class="wish-inner">
@@ -152,8 +158,31 @@
 <script>
 export default {
   data () {
-    return {}
+    return {
+      stargazers: []
+    }
   },
+  mounted () {
+    const xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        const res = JSON.parse(xhr.responseText)
+        console.log(res)
+        // 核心贡献者
+        const sortData = [36689704, 26322785, 26900681]
+        const map = new Map()
+        res.forEach(_ => map.set(_.id, _))
+        const stargazers = []
+        sortData.forEach(id => stargazers.push(map.get(id)))
+        res.forEach(_ => {
+          !sortData.includes(_.id) && stargazers.push(_)
+        })
+        this.stargazers = stargazers
+      }
+    }
+    xhr.open("GET", "https://api.github.com/users/luck-draw/following?per_page=100", true);
+    xhr.send()
+  }
 }
 </script>
 
@@ -177,8 +206,9 @@ export default {
   justify-content: center;
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 40px 0;
   width: 100%;
-  height: calc(100vh - 3.4rem);
+  /* height: calc(100vh - 3.4rem); */
   overflow: hidden;
   text-align: center;
   background: url('/bg.svg') center/cover no-repeat;
@@ -282,6 +312,18 @@ export default {
   padding: 0 25px;
   line-height: 20px;
   margin: 0.5rem 0;
+}
+.stargazers {
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+  max-width: 56rem;
+  width: 100%;
+}
+.stargazers img {
+  width: 30px;
+  border-radius: 50%;
+  margin: 3px;
+  box-shadow: 0 1px 7px 0 rgba(0,0,0,0.3);
 }
 @media (max-width: 719px) {
   .home-page-wrapper section {
