@@ -320,9 +320,9 @@ export default {
   width: 100%;
 }
 .stargazers img {
-  width: 40px;
+  width: 50px;
   border-radius: 50%;
-  margin: 3px;
+  margin: 5px;
   box-shadow: 0 1px 7px 0 rgba(0,0,0,0.3);
 }
 @media (max-width: 719px) {
