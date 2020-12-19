@@ -35,16 +35,21 @@
         </div>
         <div class="text-wrapper">
           <h1>加入我们</h1>
-          <li class="description"><b>贡献源代码：</b>目前插件基于 Ts + Rollup 开发打包 Js，并以此为基础在不同框架上面进行扩展，如果你有熟悉的框架想进行扩展，请在底部寻找我的联系方式</li>
-          <li class="description"><b>翻译文档：</b>目前也急需英语较好的同学来参与翻译文档的任务，我会在 README 里面展示所有的贡献者</li>
-          <li class="description"><b>贡献Demo：</b>如果你们公司的抽奖设计图比较好看，也可以提供给我，所有贡献者都会展示在下面</li>
+          <li class="description"><b>贡献代码：</b>目前抽奖基于 Ts + Canvas 开发， Rollup 打包 Js 在不同框架上面扩展，如果你有熟悉的框架想进行扩展，请在底部寻找我的联系方式</li>
+          <li class="description"><b>翻译文档：</b>目前也急需英语较好的同学来参与翻译文档的任务，所有贡献者都会展示在下面</li>
+          <li class="description"><b>贡献Demo：</b>如果你们公司的抽奖设计图比较好看，也可以提供给我，同样也会展示在下面</li>
         </div>
       </div>
         <div class="text-wrapper stargazers">
           <h1 style="margin-top: -40px">贡献者</h1>
-          <a v-for="item in stargazers"  :href="item.html_url" target="_black">
-            <img :src="item.avatar_url" :title="item.login" />
-          </a>
+          <div>
+            <span v-for="item in stargazers" :key="item.id" class="avatar-box">
+              <a v-if="item.id" :href="item.html_url" target="_black">
+                <img :src="item.avatar_url" :title="item.login" @error="e => imgError(e, item.id)" />
+              </a>
+              <img v-else :src="require('../public/avatar/add.svg')" />
+            </span>
+          </div>
         </div>
     </section>
     <section class="wish">
@@ -174,14 +179,24 @@ export default {
         res.forEach(_ => map.set(_.id, _))
         const stargazers = []
         sortData.forEach(id => stargazers.push(map.get(id)))
-        res.forEach(_ => {
-          !sortData.includes(_.id) && stargazers.push(_)
-        })
+        res.forEach(_ => !sortData.includes(_.id) && stargazers.push(_))
+        stargazers.push(...new Array(3).fill({}))
         this.stargazers = stargazers
       }
     }
     xhr.open("GET", "https://api.github.com/users/luck-draw/following?per_page=100", true);
     xhr.send()
+  },
+  methods: {
+    imgError (e, id) {
+      let cache
+      try {
+        cache = require(`../public/avatar/${id}.jpg`)
+      } catch {
+        cache = require(`../public/avatar/error.svg`)
+      }
+      cache && (e.target.src = cache)
+    }
   }
 }
 </script>
@@ -318,12 +333,22 @@ export default {
   padding: 0 2rem 3rem;
   max-width: 56rem;
   width: 100%;
+  user-select: none;
 }
-.stargazers img {
+.stargazers .avatar-box {
+  display: inline-block;
   width: 50px;
-  border-radius: 50%;
+  height: 50px;
   margin: 5px;
+  border-radius: 50%;
+}
+.stargazers .avatar-box a img {
   box-shadow: 0 1px 7px 0 rgba(0,0,0,0.3);
+}
+.stargazers .avatar-box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 @media (max-width: 719px) {
   .home-page-wrapper section {
