@@ -76,17 +76,18 @@ export default {
           { name: '0.3元红包', img: require('./img/6.png') },
           { name: '5元红包', img: require('./img/7.png') }
         ]
-        this.prizes = []
+        const prizes = []
         this.luckyNum = 1
         let axis = [[0, 0], [1, 0], [2, 0], [2, 1], [2, 2], [1, 2], [0, 2], [0, 1]]
         for (let i = 0; i < 8; i++) {
           let item = data[i]
-          this.prizes.push({
+          prizes.push({
             index: i, x: axis[i][0], y: axis[i][1],
             fonts: [{ text: item.name, top: '70%' }],
             imgs: [{ src: item.img, width: '55%', top: '8%' }]
           })
         }
+        this.prizes = prizes
       }, 0)
     },
     startCallBack () {

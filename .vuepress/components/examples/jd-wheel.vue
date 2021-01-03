@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     getPrizesList () {
-      this.prizes = []
+      const prizes = []
       let data = [
         { name: '10个京豆', img: require('./img/jd/1.png'), color: '#F8DEF8' },
         { name: '5个京豆', img: require('./img/jd/1.png'), color: '#FEF3FC' },
@@ -55,13 +55,14 @@ export default {
         { name: '谢谢参与', img: require('./img/jd/0.png'), color: '#FEF3FC' },
       ]
       data.forEach((item, index) => {
-        this.prizes.push({
+        prizes.push({
           name: item.name,
           background: item.color,
           fonts: [{ text: item.name, top: '12%' }],
           imgs:[{ src: item.img, width: '45%', top: '35%' }],
         })
       })
+      this.prizes = prizes
     },
     startCallBack () {
       this.$refs.LuckyWheel.play()

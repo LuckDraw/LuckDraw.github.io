@@ -48,11 +48,11 @@ export default {
   },
   methods: {
     getPrizesList () {
-      this.prizes = []
+      const prizes = []
       let axis = [[0, 0], [1, 0], [2, 0], [2, 1], [2, 2], [1, 2], [0, 2], [0, 1]]
       let data = ['电热烘干毛巾架', '10元满减红包', '2积分', '胖喵焖烧罐', '5元满减红包', '多层置物架', '3元直减红包', '全场满99减10']
       axis.forEach((item, index) => {
-        this.prizes.push({
+        prizes.push({
           x: item[0], y: item[1],
           title: data[index],
           imgs: [{
@@ -63,6 +63,7 @@ export default {
           }]
         })
       })
+      this.prizes = prizes
     },
     startCallBack () {
       this.$refs.LuckDraw.play()

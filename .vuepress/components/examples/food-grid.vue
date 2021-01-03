@@ -73,10 +73,10 @@ export default {
           { name: '零食', img: require('./img/food/8.png') },
           { name: '次数+3', img: require('./img/food/9.png') },
         ]
-        this.prizes = []
+        const prizes = []
         let axis = [[0, 0], [1, 0], [2, 0], [3, 0], [3, 1], [3, 2], [3, 3], [2, 3], [1, 3], [0, 3], [0, 2], [0, 1]]
         data.forEach((item, i) => {
-          this.prizes.push({
+          prizes.push({
             name: item.name,
             x: axis[i][0], y: axis[i][1],
             fonts: [{ text: item.name, top: '63%' }],
@@ -90,6 +90,7 @@ export default {
             ]
           })
         })
+        this.prizes = prizes
       }, 0)
     },
     startCallBack () {

@@ -50,7 +50,7 @@ export default {
   },
   methods: {
     getPrizesList () {
-      this.prizes = []
+      const prizes = []
       let axis = [[0, 0], [1, 0], [2, 0], [2, 1], [2, 2], [1, 2], [0, 2], [0, 1]]
       let data = [
         { name: 'steam游戏任选\n(限款)', img: require('./img/yyx/1.png'), top: '60%' },
@@ -63,7 +63,7 @@ export default {
         { name: '端游时长+1h', img: require('./img/yyx/7.png'), top: '69%' },
       ]
       data.forEach((item, index) => {
-        this.prizes.push({
+        prizes.push({
           x: axis[index][0], y: axis[index][1],
           title: item.name,
           fonts: [{ text: item.name, top: item.top }],
@@ -82,6 +82,7 @@ export default {
           ]
         })
       })
+      this.prizes = prizes
     },
     startCallBack () {
       this.$refs.LuckDraw.play()

@@ -12,7 +12,7 @@ module.exports = {
             { text: '在 Js / JQuery 中使用', link: '/document/js' },
             { text: '在 vue2.x / vue3.x 中使用', link: '/document/vue' },
             { text: '在 uni-app 中使用', link: '/document/uni-app' },
-            // { text: '在 微信小程序 中使用', link: '/document/wx' },
+            { text: '在 微信小程序 中使用', link: '/document/wx' },
           ]
         },
         {
@@ -24,14 +24,15 @@ module.exports = {
         }
       ]
     },
-    { text: '演示', icon: 'reco-api', link: '/demo/wheel/ymc' },
+    { text: '示例', icon: 'reco-api', link: '/demo/wheel/ymc' },
     {
-      text: '问题&建议',
+      text: '常见问题',
       icon: 'reco-faq',
-      items: [
-        { text: 'Js 中的问题', link: 'https://github.com/luckdraw/lucky-canvas/issues' },
-        { text: 'Vue 中的问题', link: 'https://github.com/luckdraw/vue-luck-draw/issues' }
-      ]
+      link: '/issues/'
+      // items: [
+      //   { text: 'Js 中的问题', link: 'https://github.com/luckdraw/lucky-canvas/issues' },
+      //   { text: 'Vue 中的问题', link: 'https://github.com/luckdraw/vue-luck-draw/issues' }
+      // ]
     },
     { text: 'Github', icon: 'reco-github', link: 'https://github.com/luckdraw' },
   ],

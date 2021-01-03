@@ -40,16 +40,17 @@ export default {
   },
   methods: {
     getPrizesList () {
-      this.prizes = []
+      const prizes = []
       let data = ['1元红包', '100元红包', '0.5元红包', '2元红包', '10元红包', '50元红包', '0.3元红包', '5元红包']
       data.forEach((item, index) => {
-        this.prizes.push({
+        prizes.push({
           title: item,
           background: index % 2 ? '#f9e3bb' : '#f8d384',
           fonts: [{ text: item, top: '10%' }],
           imgs:[{ src: require(`./img/${index}.png`), width: '30%', top: '35%' }],
         })
       })
+      this.prizes = prizes
     },
     startCallBack () {
       this.$refs.LuckyWheel.play()
