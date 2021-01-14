@@ -3,7 +3,6 @@
     <div class="wish-inner">
       <div class="text-wrapper">
         <h1>常见问题</h1>
-        <p>如果下面的答案无法解答你的疑惑, 请移步 Github 提问, 我会在同一时间收到微信提醒并前往查看</p>
         <li class="description">
           js / jQuery 相关问题：
           <a href="https://github.com/LuckDraw/lucky-canvas/issues" target="_black">
@@ -32,6 +31,7 @@
             <img src="https://img.shields.io/github/issues/luckdraw/mini-luck-draw?style=social" style="vertical-align: text-bottom" />
           </a>
         </li>
+        <p>如果下面的答案无法解答你的疑惑, 请移步 Github 提问, 我会在同一时间收到微信提醒并前往查看</p>
       </div>
       <div class="img-wrapper">
         <img :src="$withBase('/question.svg')" alt="devices" width="100%" />

@@ -173,7 +173,7 @@ export default {
         const res = JSON.parse(xhr.responseText)
         console.log(res)
         // 核心贡献者
-        const sortData = [36689704, 26322785, 26900681]
+        const sortData = [36689704, 26322785, 52775847, 26900681]
         const map = new Map()
         res.forEach(_ => map.set(_.id, _))
         const stargazers = []

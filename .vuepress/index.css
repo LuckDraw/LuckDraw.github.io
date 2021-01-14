@@ -254,6 +254,9 @@ div.footer-wrapper {
   margin: 5px;
   border-radius: 50%;
 }
+.stargazers .avatar-box a {
+  display: inline-block
+}
 .stargazers .avatar-box a img {
   box-shadow: 0 1px 7px 0 rgba(0,0,0,0.3);
 }
