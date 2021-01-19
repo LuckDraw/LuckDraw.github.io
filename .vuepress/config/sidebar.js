@@ -47,6 +47,7 @@ module.exports = {
           { title: '仿抽奖乐大转盘', path: '/demo/wheel/cjl' },
           { title: '仿潘德妈妈大转盘', path: '/demo/wheel/pdmm' },
           { title: '仿京东大转盘抽京豆', path: '/demo/wheel/jd' },
+          { title: '仿携程转盘抽奖', path: '/demo/wheel/xc' },
         ]
       },
       {
@@ -57,7 +58,6 @@ module.exports = {
           { title: '仿网易严选九宫格', path: '/demo/grid/yx' },
           { title: '仿网易云游戏九宫格', path: '/demo/grid/yyx' },
           { title: '仿新东方小程序抽奖', path: '/demo/grid/xdf' },
-          { title: '吃货大转盘十二宫格', path: '/demo/grid/food' },
         ]
       },
     ]
