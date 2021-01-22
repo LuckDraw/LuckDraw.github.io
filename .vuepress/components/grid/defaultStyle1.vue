@@ -7,7 +7,7 @@
     :demo="true"
     :blocks="blocks"
     :prizes="prizes"
-    :button="button"
+    :buttons="buttons"
     :default-style="defaultStyle"
   />
 </template>
@@ -22,7 +22,7 @@ export default {
         { x: 1, y: 0, fonts: [{ text: '1元', top: '35%' }] },
         { x: 0, y: 1, fonts: [{ text: '2元', top: '35%' }] }
       ],
-      button: { x: 1, y: 1, fonts: [{ text: '抽奖', top: '35%' }] },
+      buttons: [{ x: 1, y: 1, fonts: [{ text: '抽奖', top: '35%' }] }],
       defaultStyle: {
         borderRadius: 8,
         fontColor: '#DF424B',

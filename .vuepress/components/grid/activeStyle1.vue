@@ -5,7 +5,7 @@
     :demo="true"
     :blocks="blocks"
     :prizes="prizes"
-    :button="button"
+    :buttons="buttons"
     :active-style="activeStyle"
   />
 </template>
@@ -21,7 +21,7 @@ export default {
         { x: 1, y: 1, fonts: [{ text: '3元', top: '35%' }] },
         { x: 1, y: 0, fonts: [{ text: '2元', top: '35%' }] }
       ],
-      button: { x: 2, y: 2, fonts: [{ text: '抽奖', top: '35%' }] },
+      buttons: [{ x: 2, y: 2, fonts: [{ text: '抽奖', top: '35%' }] }],
       activeStyle: {
         fontColor: '#ff4a4c',
         background: 'pink',

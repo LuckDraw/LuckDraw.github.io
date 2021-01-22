@@ -23,7 +23,6 @@ sidebar: 'auto'
   <template v-slot:text>
     <li><code>activeStyle</code>配置的样式只有在中奖标记滑过时才会生效，如果没有开始抽奖，中奖标记则会默认停留在0号格子的位置</li>
     <li>中奖标记会以<code>index</code>升序的方式进行游走，所以<code>index</code>决定了九宫格该如何旋转</li>
-    <li>这也就是为什么<code>button</code>没有<code>index</code>的原因</li>
   </template>
 </Exhibition>
 

@@ -6,7 +6,7 @@
       ref="LuckyGrid"
       :blocks="blocks"
       :prizes="prizes"
-      :button="button"
+      :buttons="buttons"
       @start="startCallBack"
       @end="endCallBack"
     />
@@ -34,7 +34,7 @@ export default {
         { x: 0, y: 2, fonts: [{ text: '6', top: '35%' }] },
         { x: 0, y: 1, fonts: [{ text: '7', top: '35%' }] },
       ],
-      button: { x: 1, y: 1, fonts: [{ text: '开始', top: '35%' }] },
+      buttons: [{ x: 1, y: 1, fonts: [{ text: '开始', top: '35%' }] }],
     }
   },
   methods: {

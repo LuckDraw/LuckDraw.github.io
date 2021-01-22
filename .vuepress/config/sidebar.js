@@ -29,7 +29,7 @@ module.exports = {
         children: [
           { title: '边框 - blocks', path: '/document/grid/blocks' },
           { title: '奖品 - prizes', path: '/document/grid/prizes' },
-          { title: '抽奖按钮 - button', path: '/document/grid/button' },
+          { title: '抽奖按钮 - buttons', path: '/document/grid/buttons' },
           { title: '默认配置 - defaultConfig', path: '/document/grid/defaultConfig' },
           { title: '默认样式 - defaultStyle', path: '/document/grid/defaultStyle' },
           { title: '中奖标记样式 - activeStyle', path: '/document/grid/activeStyle' },

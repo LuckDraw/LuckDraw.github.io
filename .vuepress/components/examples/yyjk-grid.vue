@@ -4,7 +4,7 @@
     width="300px"
     height="300px"
     :prizes="prizes"
-    :button="btnConfig"
+    :buttons="buttons"
     :blocks="blocks"
     :default-config="defaultConfig"
     :default-style="defaultStyle"
@@ -43,8 +43,8 @@ export default {
     }
   },
   computed: {
-    btnConfig () {
-      return {
+    buttons () {
+      return [{
         x: 1,
         y: 1,
         background: 'linear-gradient(270deg, #FFDCB8, #FDC689)',
@@ -56,7 +56,7 @@ export default {
           { src: require('./img/button.png'), width: '65%', top: '13%' },
           { src: require('./img/btn.png'), width: '50%', top: '73%' }
         ]
-      }
+      }]
     }
   },
   mounted () {

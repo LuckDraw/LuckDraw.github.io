@@ -16,7 +16,6 @@
 export default {
   data () {
     return {
-      num: 0,
       prizes: [
         { name: '免费住酒店' },
         { name: '房型升级' },

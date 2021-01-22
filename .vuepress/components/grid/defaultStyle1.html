@@ -1,5 +1,5 @@
 <div id="my-lucky"></div>
-<script src="https://cdn.jsdelivr.net/npm/lucky-canvas@1.3.3/dist/lucky-canvas.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucky-canvas@1.4/dist/lucky-canvas.umd.min.js"></script>
 <script>
   let luckyGrid = new LuckyCanvas.LuckyGrid({
     el: '#my-lucky',
@@ -14,7 +14,7 @@
       { x: 1, y: 0, fonts: [{ text: '1元', top: '35%' }] },
       { x: 0, y: 1, fonts: [{ text: '2元', top: '35%' }] }
     ],
-    button: { x: 1, y: 1, fonts: [{ text: '抽奖', top: '35%' }] },
+    buttons: [{ x: 1, y: 1, fonts: [{ text: '抽奖', top: '35%' }] }],
     defaultStyle: {
       borderRadius: 8,
       fontColor: '#DF424B',

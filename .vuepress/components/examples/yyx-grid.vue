@@ -8,7 +8,7 @@
       height="300px"
       :prizes="prizes"
       :blocks="blocks"
-      :button="button"
+      :buttons="buttons"
       :default-style="defaultStyle"
       :active-style="activeStyle"
       @start="startCallBack"
@@ -25,7 +25,7 @@ export default {
       blocks: [
         { padding: '10px', background: 'rgba(0, 0, 0, 0)', borderRadius: '10px' },
       ],
-      button: {
+      buttons: [{
         x: 1, y: 1, background: 'rgba(0, 0, 0, 0)',
         fonts: [
           { text: '剩余次数:???次', fontColor: '#ca620d', top: '75%' }
@@ -33,7 +33,7 @@ export default {
         imgs: [
           { src: require('./img/yyx/btn.png'), width: '100%', top: '0' }
         ]
-      },
+      }],
       defaultStyle: {
         fontColor: '#AFFFD7',
         fontSize: '10px',

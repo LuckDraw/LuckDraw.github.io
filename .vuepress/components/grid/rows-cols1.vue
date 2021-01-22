@@ -7,7 +7,7 @@
     :demo="true"
     :blocks="blocks"
     :prizes="prizes"
-    :button="button"
+    :buttons="buttons"
   />
 </template>
 
@@ -28,7 +28,7 @@ export default {
         { x: 0, y: 2, fonts: [{ text: '8元', top: 20 }] },
         { x: 0, y: 1, fonts: [{ text: '9元', top: 20 }] }
       ],
-      button: { x: 1, y: 1, col: 2, fonts: [{ text: '抽奖按钮', top: 20 }] },
+      buttons: [{ x: 1, y: 1, col: 2, fonts: [{ text: '抽奖按钮', top: 20 }] }],
     }
   }
 }

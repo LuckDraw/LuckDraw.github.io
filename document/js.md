@@ -13,12 +13,12 @@ sidebar: false
 
 > 为了避免 CDN 链接出现异常或波动，我非常建议你**缓存到本地或服务器**
 
-- **指定版本：** [https://cdn.jsdelivr.net/npm/lucky-canvas@1.3.3/dist/lucky-canvas.umd.min.js](https://cdn.jsdelivr.net/npm/lucky-canvas@1.3.3/dist/lucky-canvas.umd.min.js)
+- **指定版本：** [https://cdn.jsdelivr.net/npm/lucky-canvas@1.4/dist/lucky-canvas.umd.min.js](https://cdn.jsdelivr.net/npm/lucky-canvas@1.4/dist/lucky-canvas.umd.min.js)
 
 
 ```html
 <div id="my-lucky"></div>
-<script src="https://cdn.jsdelivr.net/npm/lucky-canvas@1.3.3/dist/lucky-canvas.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucky-canvas@1.4/dist/lucky-canvas.umd.min.js"></script>
 <script>
 
   // 大转盘抽奖

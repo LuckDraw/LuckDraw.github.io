@@ -5,7 +5,7 @@
     height="330px"
     :prizes="prizes"
     :blocks="blocks"
-    :button="button"
+    :buttons="buttons"
     :default-style="defaultStyle"
     :active-style="activeStyle"
     @start="startCallBack"
@@ -24,12 +24,12 @@ export default {
         { padding: '1px', background: '#e2cea3', borderRadius: '8px' },
         { padding: '15px 10px', background: '#fffcf5', borderRadius: '8px' },
       ],
-      button: {
+      buttons: [{
         x: 1, y: 1, background: 'rgba(0, 0, 0, 0)',
         imgs: [
           { src: require('./img/yx/btn.png'), width: '90%', top: '5%' }
         ]
-      },
+      }],
       defaultStyle: {
         background: '#ffefd6',
         borderRadius: '5px',

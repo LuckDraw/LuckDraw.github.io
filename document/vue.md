@@ -60,8 +60,8 @@ createApp(App).use(LuckDraw).mount('#app')
 
 > 为了避免 CDN 链接出现异常或波动，我非常建议你**缓存到本地或服务器**
 
-- **vue2.x：**[https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.9/dist/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.9/dist/vue-luck-draw.umd.min.js)
-- **vue3.x：**[https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.9/vue3/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.9/vue3/vue-luck-draw.umd.min.js)
+- **vue2.x：**[https://cdn.jsdelivr.net/npm/vue-luck-draw@3.4/dist/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw@3.4/dist/vue-luck-draw.umd.min.js)
+- **vue3.x：**[https://cdn.jsdelivr.net/npm/vue-luck-draw@3.4/vue3/vue-luck-draw.umd.min.js](https://cdn.jsdelivr.net/npm/vue-luck-draw@3.4/vue3/vue-luck-draw.umd.min.js)
 
 
 ```html
@@ -80,7 +80,7 @@ createApp(App).use(LuckDraw).mount('#app')
   />
 </div>
 <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue-luck-draw@3.3.9/vue3/vue-luck-draw.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-luck-draw@3.4/vue3/vue-luck-draw.umd.min.js"></script>
 <script>
   new Vue({
     el: '#app'

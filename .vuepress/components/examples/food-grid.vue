@@ -9,7 +9,7 @@
       cols="4"
       rows="4"
       :prizes="prizes"
-      :button="button"
+      :buttons="buttons"
       :blocks="blocks"
       :default-config="defaultConfig"
       :default-style="defaultStyle"
@@ -25,7 +25,7 @@ export default {
   data () {
     return {
       prizes: [],
-      button: {
+      buttons: [{
         x: 1, y: 1, col: 2, row: 2,
         background: 'rgba(0, 0, 0, 0)',
         fonts: [
@@ -33,7 +33,7 @@ export default {
           { text: '- start -', fontSize: '12px', fontColor: '#1c258e', top: '65%' }
         ],
         imgs: [{ src: require('./img/food/btn.png'), width: '100%' }]
-      },
+      }],
       blocks: [
         { padding: '5px', background: 'rgba(0, 0, 0, 0)' },
       ],

@@ -5,7 +5,7 @@
     height="300px"
     :blocks="blocks"
     :prizes="prizes"
-    :button="button"
+    :buttons="buttons"
     :defaultConfig="defaultConfig"
     :defaultStyle="defaultStyle"
     :activeStyle="activeStyle"
@@ -65,10 +65,10 @@ export default {
           imgs: [{ src: require('./img/xdf/1.png'), width: '50%', top: '12%' }],
         },
       ],
-      button: {
+      buttons: [{
         x: 1, y: 1,
         imgs: [{ src: require('./img/xdf/button.png'), width: '100%', height: '100%' }]
-      },
+      }],
       defaultConfig: {
         gutter: 8
       },

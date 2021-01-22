@@ -22,7 +22,7 @@ module.exports = {
   themeConfig: {
     mode: 'light',
     type: 'HomePage',
-    logo: '/logo.png',
+    // logo: '/logo.png',
     noFoundPageByTencent: false,
     modePicker: false,
     nextLinks: false,
