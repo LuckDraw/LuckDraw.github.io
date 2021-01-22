@@ -4,9 +4,9 @@ sidebar: 'auto'
 ---
 
 
-> 实际上`奖品格子`的属性与`按钮格子`的属性相差无几，但是有个区别：1.奖品有很多个所以是数组，而抽奖按钮只有一个所以是对象；
+> 实际上`奖品格子`的属性与`按钮格子`的属性相差无几
 
-- <Describe name="buttons?: object" mean="抽奖按钮" />
+- <Describe name="buttons?: Array<object>" mean="抽奖按钮" />
   - <Describe name="x: number" mean="相对坐标x" desc="如果是标准的 3*3 宫格，那 x 的范围是 0 ~ 2" :isRequire="true" />
   - <Describe name="y: number" mean="相对坐标y" desc="如果是标准的 3*3 宫格，那 y 的范围是 0 ~ 2" :isRequire="true" />
   - <Describe name="col?: number" mean="横向合并格子" desc="用来横向合并单元格，默认为 1" />
