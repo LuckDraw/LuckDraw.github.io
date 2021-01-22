@@ -4,7 +4,7 @@ sidebar: 'auto'
 ---
 
 
-> 实际上`奖品格子`的属性与`按钮格子`的属性相差无几
+> 实际上`奖品格子`的属性与`按钮格子`的属性相差无几, 因为对于奖品和按钮来说, 他们都属于格子
 
 - <Describe name="buttons?: Array<object>" mean="抽奖按钮" />
   - <Describe name="x: number" mean="相对坐标x" desc="如果是标准的 3*3 宫格，那 x 的范围是 0 ~ 2" :isRequire="true" />
