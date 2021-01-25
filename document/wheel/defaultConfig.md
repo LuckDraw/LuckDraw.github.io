@@ -7,6 +7,7 @@ sidebar: 'auto'
 
 - <Describe name="default-config?: object" mean="默认配置" />
   - <Describe name="gutter?: string | number" mean="扇形之间的缝隙" desc="默认等于 0" />
+  - <Describe name="stopRange?: number" mean="扇形区域的停止范围" desc="默认为 0.8, 建议范围 0 ~ 0.9, 如果设置 1 可能会停在奖品边缘!" />
   - <Describe name="offsetDegree?: number" mean="转盘的偏移角度" desc="默认为 0 度" />
   - <Describe name="speed?: number" mean="旋转速度峰值" desc="默认为 20，建议配置范围 10 ~ 30" />
   - <Describe name="speedFunction?: string" mean="缓动函数" desc="当前版本固定为 quadratic 二次方加速，后期会提供更多可选函数" />
