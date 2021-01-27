@@ -13,8 +13,7 @@
           <div>
             <img :src="$withBase('/setup.svg')" alt="frameworks" width="70%" />
             <h1>多端适配</h1>
-            <p>一个支持 Js / JQuery / Vue / uni-app / 微信小程序 的抽奖插件；</p>
-            <p>React 版本还在开发中...</p>
+            <p>一个支持 Js / JQuery / Vue / React / uni-app / 微信小程序 的抽奖插件；</p>
           </div>
           <div>
             <img :src="$withBase('/style.svg')" alt="frameworks" width="70%" />
@@ -82,9 +81,11 @@
                 <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
               </tr>
               <tr style="background: #fef0f0">
-                <td align="center">react-luck-draw</td>
+                <td align="center"><a href="https://github.com/LuckDraw/react-luck-draw" target="_black">react-luck-draw</a></td>
                 <td align="center">React</td>
-                <td align="center" colspan="3">开发中...</td>
+                <td align="center"><img src="https://img.shields.io/github/package-json/v/luckdraw/react-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/dm/react-luck-draw?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
+                <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/react-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
               </tr>
               <tr style="background: #fdf6ec">
                 <td align="center"><a href="https://github.com/LuckDraw/mini-luck-draw" target="_black">mini-luck-draw</a></td>
