@@ -3,11 +3,14 @@ sidebar: false
 ---
 
 <h1>
-  在 vue2.x / vue3.x 中使用&ensp;
+  在 vue2.x / vue3.x 中使用
+</h1>
+
+<p>
   <a href="https://github.com/LuckDraw/vue-luck-draw" target="_black">
     <img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%233eaf7c&label=vue-luck-draw%20%7C%20stars&logo=github&style=flat-square" style="vertical-align: bottom" alt="stars" />
   </a>
-</h1>
+</p>
 
 ## 方式 1：通过 import 引入
 

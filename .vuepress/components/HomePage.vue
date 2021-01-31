@@ -69,35 +69,35 @@
               <tr style="background: #ecf5ff">
                 <td align="center"><a href="https://github.com/LuckDraw/lucky-canvas" target="_black">lucky-canvas</a></td>
                 <td align="center">Js / JQuery</td>
-                <td align="center"><img src="https://img.shields.io/github/package-json/v/luckdraw/lucky-canvas?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/v/lucky-canvas?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
                 <td align="center"><img src="https://img.shields.io/npm/dm/lucky-canvas?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
                 <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/lucky-canvas?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
               </tr>
               <tr style="background: #f0f9eb">
                 <td align="center"><a href="https://github.com/LuckDraw/vue-luck-draw" target="_black">vue-luck-draw</a></td>
                 <td align="center">Vue2.x / Vue3.x</td>
-                <td align="center"><img src="https://img.shields.io/github/package-json/v/luckdraw/vue-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/v/vue-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
                 <td align="center"><img src="https://img.shields.io/npm/dm/vue-luck-draw?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
                 <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/vue-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
               </tr>
               <tr style="background: #fef0f0">
                 <td align="center"><a href="https://github.com/LuckDraw/react-luck-draw" target="_black">react-luck-draw</a></td>
                 <td align="center">React</td>
-                <td align="center"><img src="https://img.shields.io/github/package-json/v/luckdraw/react-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/v/react-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
                 <td align="center"><img src="https://img.shields.io/npm/dm/react-luck-draw?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
                 <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/react-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
               </tr>
               <tr style="background: #fdf6ec">
                 <td align="center"><a href="https://github.com/LuckDraw/mini-luck-draw" target="_black">mini-luck-draw</a></td>
                 <td align="center">原生微信小程序</td>
-                <td align="center"><img src="https://img.shields.io/github/package-json/v/luckdraw/mini-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/v/mini-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
                 <td align="center"><img src="https://img.shields.io/npm/dm/mini-luck-draw?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
                 <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/mini-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
               </tr>
               <tr style="background: #fdf6ec">
                 <td align="center"><a href="https://github.com/LuckDraw/uni-luck-draw" target="_black">uni-luck-draw</a></td>
                 <td align="center">uni-app</td>
-                <td align="center"><img src="https://img.shields.io/github/package-json/v/luckdraw/uni-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/v/uni-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
                 <td align="center"><img src="https://img.shields.io/npm/dm/uni-luck-draw?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
                 <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/uni-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
               </tr>

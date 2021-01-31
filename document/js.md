@@ -3,11 +3,14 @@ sidebar: false
 ---
 
 <h1>
-  在 Js / JQuery 中使用&ensp;
+  在 Js / JQuery 中使用
+</h1>
+
+<p>
   <a href="https://github.com/LuckDraw/lucky-canvas" target="_black">
     <img src="https://img.shields.io/github/stars/luckdraw/lucky-canvas?color=%23ffca28&label=lucky-canvas%20%7C%20stars&logo=github&style=flat-square" style="vertical-align: bottom" alt="stars" />
   </a>
-</h1>
+</p>
 
 ## 方式 1：通过 script 标签引入
 

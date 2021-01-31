@@ -3,11 +3,14 @@ sidebar: false
 ---
 
 <h1>
-  在 React 中使用 (内测中)&ensp;
+  在 React 中使用
+</h1>
+
+<p>
   <a href="https://github.com/LuckDraw/react-luck-draw" target="_black">
     <img src="https://img.shields.io/github/stars/luckdraw/react-luck-draw?color=%2361dafb&label=react-luck-draw%20%7C%20stars&logo=github&style=flat-square" style="vertical-align: bottom" alt="stars" />
   </a>
-</h1>
+</p>
 
 ## 方式 1：通过 import 引入
 
@@ -21,7 +24,7 @@ npm install react-luck-draw
 yarn add react-luck-draw
 ```
 
-2. 然后找到 `main.js` 引入插件并使用
+2. 然后在你的组件中引入并使用
 
 ```js
 import { LuckyWheel, LuckyGrid } from 'react-luck-draw'
