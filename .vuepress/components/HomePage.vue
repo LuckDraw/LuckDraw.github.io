@@ -3,7 +3,7 @@
     <section class="main">
       <div>
         <img class="logo" :src="$withBase('/web.svg')" alt="logo" style="max-width: 18rem; height: 30%" />
-        <h1 class="title">基于 Js / JQuery / Vue / React / 微信小程序 / uni-app 的抽奖插件【大转盘 & 九宫格】</h1>
+        <h1 class="title">基于 Js / JQ / Vue / React / 微信小程序 / uni-app / Taro 的抽奖插件【大转盘 & 九宫格】</h1>
         <div class="plugin">
           <div>
             <img :src="$withBase('/start.svg')" alt="frameworks" width="70%" />
@@ -100,6 +100,13 @@
                 <td align="center"><img src="https://img.shields.io/npm/v/uni-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
                 <td align="center"><img src="https://img.shields.io/npm/dm/uni-luck-draw?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
                 <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/uni-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
+              </tr>
+              <tr style="background: #fdf6ec">
+                <td align="center"><a href="https://github.com/LuckDraw/taro-luck-draw" target="_black">taro-luck-draw</a></td>
+                <td align="center">Taro</td>
+                <td align="center"><img src="https://img.shields.io/npm/v/taro-luck-draw?color=%23ffca28&logo=npm&style=flat-square" alt="version" /></td>
+                <td align="center"><img src="https://img.shields.io/npm/dm/taro-luck-draw?color=%237289da&logo=npm&style=flat-square" alt="downloads" /></td>
+                <td align="center"><img src="https://img.shields.io/github/stars/luckdraw/taro-luck-draw?color=%232DCE89&logo=github&style=flat-square" alt="stars" /></td>
               </tr>
             </tbody>
           </table>
