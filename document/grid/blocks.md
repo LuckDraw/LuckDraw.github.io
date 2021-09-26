@@ -3,6 +3,8 @@ title: 边框 - blocks
 sidebar: 'auto'
 ---
 
+<grid-demo />
+
 > `blocks`用来绘制矩形（宽度和高度不可配置）第一个矩形的宽高等于`<luckyGrid />`的宽高，但可以通过`padding`属性挤出边框的样式
 
 - <Describe name="blocks?: Array<object>" mean="" />
